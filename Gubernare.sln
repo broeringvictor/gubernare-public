@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Domain", "..\src\Gubernare.Domain\Gubernare.Domain.csproj", "{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Domain", ".\src\Gubernare.Domain\Gubernare.Domain.csproj", "{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Api", "..\src\Gubernare.Api\Gubernare.Api.csproj", "{77E76B30-23FE-4869-977C-B5C8CD06E5F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Api", ".\src\Gubernare.Api\Gubernare.Api.csproj", "{77E76B30-23FE-4869-977C-B5C8CD06E5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Infrastructure", "..\src\Gubernare.Infrastructure\Gubernare.Infrastructure.csproj", "{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Infrastructure", ".\src\Gubernare.Infrastructure\Gubernare.Infrastructure.csproj", "{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
