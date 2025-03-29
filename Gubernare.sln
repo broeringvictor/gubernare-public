@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Domain", "..\src\Gubernare.Domain\Gubernare.Domain.csproj", "{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Api", "..\src\Gubernare.Api\Gubernare.Api.csproj", "{77E76B30-23FE-4869-977C-B5C8CD06E5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Infrastructure", "..\src\Gubernare.Infrastructure\Gubernare.Infrastructure.csproj", "{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A787BAA-EA83-4D24-AA82-9B3D98C14C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E76B30-23FE-4869-977C-B5C8CD06E5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E76B30-23FE-4869-977C-B5C8CD06E5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E76B30-23FE-4869-977C-B5C8CD06E5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E76B30-23FE-4869-977C-B5C8CD06E5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0030E7DC-C83B-49FA-A3BB-562DD15EC15E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
