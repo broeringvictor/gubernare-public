@@ -63,6 +63,13 @@ public static class AccountContextExtension
             result.Data.Token = JwtExtension.Generate(result.Data);
             return Results.Ok(result);
         });
+        app.MapGet("api/v1/is-authenticated", (HttpContext context) =>
+        {
+            return Results.Ok(new
+            {
+                Message = "Você está autorizado"
+            });
+        }).RequireAuthorization();
 
         #endregion
     }
