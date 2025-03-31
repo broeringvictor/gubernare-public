@@ -1,10 +1,18 @@
-﻿using Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents;
+﻿using Gubernare.Domain.Contexts.SharedContext.Entities;
+using Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents;
 
 namespace Gubernare.Domain.Contexts.ClientContext.Entities;
 
-public class IndividualClient
+public class IndividualClient : Entity
 {
-    public string Name { get;  private set; }
+    
+    protected IndividualClient()
+    {
+    }
+
+    #region properties
+    public string Name { get; private set; } = string.Empty;
+    public string? Notes { get; private set; }
     public string? Phone { get; private set; }
     public string? Email { get; private set; }
     public string? ZipCode { get; private set; }
@@ -14,10 +22,64 @@ public class IndividualClient
     public string? Country { get; private set; }
     public string? JobTitle { get; private set; }
     public string? MaritalStatus { get; private set; }
-    public string? BirthDate { get; private set; }
-    
-    public string? Notes { get; private set; }
+    public string? Homeland { get; private set; }
     public Cpf CpfNumber { get; private set; } = null!;
     public Rg RgNumber { get; private set; } = null!;
+    public DateTime? BirthDate { get; private set; }
+    public DateTime FristContactAt { get; private set; } = DateTime.Now;
+    public string? FristContact { get; private set; }
+    public List<Contract> Contracts { get; private set; } = new();
+
+    #endregion
     
+    #region Constructor
+    public IndividualClient(
+        string name,
+        string? email = null,
+        string? phone = null,
+        string? notes = null)
+    {
+        Name = name;
+        Email = email;
+        Phone = phone;
+        Notes = notes;
+    }
+
+    // Construtor completo (aceitando todos os campos)
+    public IndividualClient(
+        string name,
+        string? email,
+        string? phone,
+        string? zipCode,
+        string? street,
+        string? city,
+        string? state,
+        string? country,
+        string? jobTitle,
+        string? maritalStatus,
+        string? homeland,
+        Cpf cpfNumber,
+        Rg rgNumber,
+        DateTime? birthDate,
+        string? fristContact,
+        List<Contract> contracts)
+    {
+        Name = name;
+        Email = email;
+        Phone = phone;
+        ZipCode = zipCode;
+        Street = street;
+        City = city;
+        State = state;
+        Country = country;
+        JobTitle = jobTitle;
+        MaritalStatus = maritalStatus;
+        Homeland = homeland;
+        CpfNumber = cpfNumber;
+        RgNumber = rgNumber;
+        BirthDate = birthDate;
+        FristContact = fristContact;
+        Contracts = contracts ?? new List<Contract>();
+    }
+    #endregion
 }
