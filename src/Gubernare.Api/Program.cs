@@ -13,7 +13,12 @@ builder.Services.AddOpenApi();
 
 builder.AddConfiguration();
 builder.AddDatabase();
+
 builder.AddAccountContext();
+builder.AddContractContext();
+builder.AddIndividualClientContext();
+
+
 builder.AddJwtAuthentication();
 
 builder.AddMediator();
@@ -33,12 +38,13 @@ if (app.Environment.IsDevelopment())
     app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();
 }
 app.UseHttpsRedirection();
-app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapAccountEndpoints();
+app.MapContractEndpoints();
+app.MapIndividualClientEndpoints();
 
 
 

@@ -5,7 +5,7 @@ namespace Gubernare.Domain.Contexts.ClientContext.Entities;
 
 public class IndividualClient : Entity
 {
-    
+
     protected IndividualClient()
     {
     }
@@ -31,7 +31,7 @@ public class IndividualClient : Entity
     public List<Contract> Contracts { get; private set; } = new();
 
     #endregion
-    
+
     #region Constructor
     public IndividualClient(
         string name,
@@ -58,11 +58,11 @@ public class IndividualClient : Entity
         string? jobTitle,
         string? maritalStatus,
         string? homeland,
-        Cpf cpfNumber,
-        Rg rgNumber,
+        Cpf? cpfNumber,
+        Rg? rgNumber,
         DateTime? birthDate,
-        string? fristContact,
-        List<Contract> contracts)
+        string? fristContact
+        )
     {
         Name = name;
         Email = email;
@@ -79,7 +79,7 @@ public class IndividualClient : Entity
         RgNumber = rgNumber;
         BirthDate = birthDate;
         FristContact = fristContact;
-        Contracts = contracts ?? new List<Contract>();
+
     }
     #endregion
 }

@@ -1,37 +1,42 @@
 ﻿using DocumentValidator;
 
-namespace Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents;
-
-public class Cpf : ValueObject
+namespace Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents
 {
-  
-    public string CpfValue { get; }
-
-  
-    protected Cpf()
+    public class Cpf : ValueObject
     {
-    }
+        public string CpfValue { get; }
 
+        protected Cpf() { }
 
-    public Cpf(string cpfValue)
-    {
-        try
+        public Cpf(string cpfValue)
         {
-         
-            if (!CpfValidation.Validate(cpfValue))
+            try
             {
-                throw new Exception("CPF inválido.");
-            }
+                // Remove qualquer caractere que não seja dígito
+                var apenasDigitos = new string(cpfValue
+                    .Where(char.IsDigit)
+                    .ToArray());
 
-          
-            CpfValue = cpfValue;
+                // Faz a validação no padrão "somente números"
+                if (!CpfValidation.Validate(apenasDigitos))
+                {
+                    throw new Exception("CPF inválido.");
+                }
+
+                // Armazena somente os dígitos
+                CpfValue = apenasDigitos;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Erro ao validar o CPF: {e.Message}");
+                throw;
+            }
         }
-        catch (Exception e)
+
+        public override string ToString()
         {
-            Console.WriteLine($"Erro ao validar o CPF: {e.Message}");
-            throw;
+            // Retorna sempre o CPF sem pontuação (ex: "11111111111")
+            return CpfValue;
         }
     }
-
-    public override string ToString() => CpfValue;
 }

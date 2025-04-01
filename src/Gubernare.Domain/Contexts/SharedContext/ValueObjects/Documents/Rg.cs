@@ -1,37 +1,38 @@
 ﻿using DocumentValidator;
 
-namespace Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents;
-
-public class Rg : ValueObject
+namespace Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents
 {
-  
-    public string RgValue { get; }
-
-  
-    protected Rg()
+    public class Rg : ValueObject
     {
-    }
+        public string RgValue { get; }
 
+        protected Rg() { }
 
-    public Rg(string rgValue)
-    {
-        try
+        public Rg(string rgValue)
         {
-         
-            if (!CpfValidation.Validate(rgValue))
+            try
             {
-                throw new Exception("Rg inválido.");
+
+                var apenasDigitos = new string(rgValue
+                    .Where(char.IsDigit)
+                    .ToArray());
+
+
+                if (!RGValidation.Validate(apenasDigitos))
+                {
+                    throw new Exception("RG inválido.");
+                }
+
+                // Armazena somente os dígitos
+                RgValue = apenasDigitos;
             }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Erro ao validar o RG: {e.Message}");
+                throw;
+            }
+        }
 
-          
-            RgValue = rgValue;
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Erro ao validar o Rg: {e.Message}");
-            throw;
-        }
+        public override string ToString() => RgValue;
     }
-
-    public override string ToString() => RgValue;
 }
