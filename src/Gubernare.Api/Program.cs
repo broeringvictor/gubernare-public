@@ -28,28 +28,25 @@ var app = builder.Build();
 
 // Middleware pipeline configuration
 
-if (app.Environment.IsDevelopment())
-{
-    app.MapScalarApiReference(options =>
-    {
-        // Disable default fonts to avoid download unnecessary fonts
-        options.DefaultFonts = false;
-    });
-    app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();
-}
+
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapAccountEndpoints();
-app.MapContractEndpoints();
-app.MapIndividualClientEndpoints();
-
-
-
+app.MapAccountApiV1();
+app.MapClientApiV1();
 
 
 app.MapOpenApi();
+
+app.MapScalarApiReference(options =>
+{
+    // Disable default fonts to avoid download unnecessary fonts
+    options.DefaultFonts = false;
+});
+app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();
+
+
 
 app.Run();
