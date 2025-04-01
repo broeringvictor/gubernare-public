@@ -6,6 +6,9 @@ public abstract class Entity : IEquatable<Guid>
         Id = Guid.NewGuid();
 
     public Guid Id { get; }
+    
+    
+    
 
     public bool Equals(Guid id) 
         => Id == id;
