@@ -5,7 +5,7 @@ using Gubernare.Domain.Contexts.AccountContext.ValueObjects;
 namespace Gubernare.Tests.Entities.Entities;
 
 [TestClass]
-public class AccountTest
+public class AccountTests
 {
     private readonly User _user = new User("victor@victorbroering.adv.br", "<PAssWORD!@1011>");
     private readonly Password _password = new Password("<PAssWORD!@1011>");
