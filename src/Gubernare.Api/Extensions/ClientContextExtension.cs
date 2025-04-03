@@ -84,7 +84,6 @@ public static class ClientContextExtension
             case 404:
                 return TypedResults.NotFound(result);
             case 500:
-                // Se precisar de 500, sem typed results para "500 + body":
                 return (Results<Created<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, BadRequest<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, NotFound<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, StatusCodeHttpResult>)Results.Json(result, statusCode: 500);
 
             default:
@@ -92,7 +91,6 @@ public static class ClientContextExtension
         }
     }
 
-    // ===========================================================
 
 public static async Task<Results<
     Created<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
