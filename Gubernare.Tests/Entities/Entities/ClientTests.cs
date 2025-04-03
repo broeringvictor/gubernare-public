@@ -4,7 +4,7 @@ using Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents;
 namespace Gubernare.Tests.Entities.Entities;
 
 [TestClass]
-public class ClientTest
+public class ClientTests
 {
     private static readonly Cpf _cpf = new Cpf("887.356.880-76");
     private static readonly Rg _rg = new Rg("41.308.783-9");

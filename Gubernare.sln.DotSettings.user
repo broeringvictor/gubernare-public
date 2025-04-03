@@ -10,5 +10,8 @@
     &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Entities.ClientTest.Tentar_criar_um_CPF_invalido_deve_retornar_erro&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Entities.AccountTest.Validação_do_Código_enviado_por_email_para_ativar_a_conta&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Entities.AccountTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Repository.AccountContext&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Repository.RepositoryTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::F6117078-8E99-46B3-A244-7F22C87E1725::net9.0::Gubernare.Tests.Entities.Repository.ClientRepositoryTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
