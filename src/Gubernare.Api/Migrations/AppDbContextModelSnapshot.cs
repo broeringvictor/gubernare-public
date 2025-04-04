@@ -360,11 +360,9 @@ namespace Gubernare.Api.Migrations
                                 .HasForeignKey("IndividualClientId");
                         });
 
-                    b.Navigation("CpfNumber")
-                        .IsRequired();
+                    b.Navigation("CpfNumber");
 
-                    b.Navigation("RgNumber")
-                        .IsRequired();
+                    b.Navigation("RgNumber");
                 });
 
             modelBuilder.Entity("UserRole", b =>

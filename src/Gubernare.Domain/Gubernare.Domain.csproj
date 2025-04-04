@@ -10,6 +10,7 @@
       <PackageReference Include="DocsBRValidator" Version="1.3.2" />
       <PackageReference Include="Flunt" Version="2.0.5" />
       <PackageReference Include="MediatR" Version="12.4.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.0" />
     </ItemGroup>
 
 </Project>

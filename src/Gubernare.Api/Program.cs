@@ -10,13 +10,15 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
-
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SchemaFilter<DescriptionSchemaFilter>();
+});
 builder.AddConfiguration();
 builder.AddDatabase();
 
 builder.AddAccountContext();
-builder.AddContractContext();
-builder.AddIndividualClientContext();
+builder.AddClientContext();
 
 
 builder.AddJwtAuthentication();

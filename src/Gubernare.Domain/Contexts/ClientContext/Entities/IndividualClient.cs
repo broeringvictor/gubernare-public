@@ -23,8 +23,8 @@ public class IndividualClient : Entity
     public string? JobTitle { get; private set; }
     public string? MaritalStatus { get; private set; }
     public string? Homeland { get; private set; }
-    public Cpf CpfNumber { get; private set; } = null!;
-    public Rg RgNumber { get; private set; } = null!;
+    public Cpf? CpfNumber { get; private set; }
+    public Rg? RgNumber { get; private set; }
     public DateTime? BirthDate { get; private set; }
     public DateTime FristContactAt { get; private set; } = DateTime.Now;
     public string? FristContact { get; private set; }
@@ -33,17 +33,6 @@ public class IndividualClient : Entity
     #endregion
 
     #region Constructor
-    public IndividualClient(
-        string name,
-        string? email = null,
-        string? phone = null,
-        string? notes = null)
-    {
-        Name = name;
-        Email = email;
-        Phone = phone;
-        Notes = notes;
-    }
 
     // Construtor completo (aceitando todos os campos)
     public IndividualClient(

@@ -26,7 +26,7 @@ public static class JwtExtension
         var token = handler.CreateToken(tokenDescriptor);
         return handler.WriteToken(token);
     }
-    
+
     private static ClaimsIdentity GenerateClaims(ResponseData user)
     {
         var ci = new ClaimsIdentity();

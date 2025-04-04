@@ -1,149 +1,77 @@
-
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Gubernare.Api.Extensions;
 
 namespace Gubernare.Api.Extensions;
 
 public static class ClientContextExtension
 {
-
-    public static void AddContractContext(this WebApplicationBuilder builder)
+    public static void AddClientContext(this WebApplicationBuilder builder)
     {
-        #region Create
+        AddContractContext(builder);
+        AddIndividualClientContext(builder);
+    }
+
+    private static void AddContractContext(this WebApplicationBuilder builder)
+    {
         builder.Services.AddTransient<
             Domain.Contexts.ClientContext.UseCases.CreateContract.Contracts.IRepository,
             Infrastructure.Contexts.ClientContext.UseCases.CreateContract.Repository>();
-        #endregion
     }
 
-    public static void AddIndividualClientContext(this WebApplicationBuilder builder)
+    private static void AddIndividualClientContext(this WebApplicationBuilder builder)
     {
-        #region Create
         builder.Services.AddTransient<
             Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Contracts.IRepository,
             Infrastructure.Contexts.ClientContext.UseCases.CreateIndividualClient.Repository>();
-        #endregion
     }
-
 
     public static IEndpointRouteBuilder MapClientApiV1(this IEndpointRouteBuilder routes)
     {
-        // Agrupa as rotas sob "/api/v1/clients"
         var api = routes.MapGroup("api/v1/clients")
-                        .WithTags("Client Operations");
+                        .WithTags("Client Operations")
+                        .WithOpenApi();
 
-        // ROTA 1: "POST /api/v1/clients/contracts"
         api.MapPost("/contracts", CreateContract)
            .WithSummary("CreateContract")
            .WithDescription("Cria um novo contrato para o cliente")
-           .WithOpenApi();
+           .ProducesProblem(400)
+           .ProducesProblem(500);
 
-        // ROTA 2: "POST /api/v1/clients/individuals"
         api.MapPost("/individuals", CreateIndividualClient)
            .WithName("CreateIndividualClient")
-           .WithSummary("CreateIndividualClient")
-           .WithDescription("Cria um cliente pessoa física")
-           .WithOpenApi();
+           .WithSummary("Cria cliente pessoa física")
+           .WithDescription("Cadastro completo com documentos e informações pessoais")
+           .ProducesProblem(400)
+           .ProducesProblem(500);
 
         return routes;
     }
 
-    // ===========================================================
-    //  Rota: /api/v1/clients/contracts => CreateContract
-    // ===========================================================
-    public static async Task<Results<
-        Created<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>,
-        BadRequest<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>,
-        NotFound<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>,
-        StatusCodeHttpResult
-    >>
-    CreateContract(
-        [FromBody] Domain.Contexts.ClientContext.UseCases.CreateContract.Request request,
-        [FromServices] IRequestHandler<
-            Domain.Contexts.ClientContext.UseCases.CreateContract.Request,
-            Domain.Contexts.ClientContext.UseCases.CreateContract.Response> handler
-    )
+    private static async Task<Results<Created<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, ProblemHttpResult>>
+        CreateContract(
+            [FromBody] Domain.Contexts.ClientContext.UseCases.CreateContract.Request request,
+            [FromServices] IRequestHandler<
+                Domain.Contexts.ClientContext.UseCases.CreateContract.Request,
+                Domain.Contexts.ClientContext.UseCases.CreateContract.Response> handler)
     {
         var result = await handler.Handle(request, CancellationToken.None);
-
-        if (result.IsSuccess)
-        {
-            // Se deu certo, retornamos 201 com o payload
-            return TypedResults.Created(
-                $"/api/v1/clients/contracts/{result.Data?.Id}",
-                result
-            );
-        }
-
-
-        switch (result.Status)
-        {
-            case 400:
-                return TypedResults.BadRequest(result);
-            case 404:
-                return TypedResults.NotFound(result);
-            case 500:
-                return (Results<Created<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, BadRequest<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, NotFound<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, StatusCodeHttpResult>)Results.Json(result, statusCode: 500);
-
-            default:
-                return (Results<Created<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, BadRequest<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, NotFound<Domain.Contexts.ClientContext.UseCases.CreateContract.Response>, StatusCodeHttpResult>)Results.Json(result, statusCode: result.Status);
-        }
+        return result.IsSuccess
+            ? TypedResults.Created($"/api/v1/clients/contracts/{result.Data?.Id}", result)
+            : TypedResults.Problem(result.ToProblemDetails());
     }
 
-
-public static async Task<Results<
-    Created<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-    BadRequest<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-    NotFound<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-    StatusCodeHttpResult
->>
-CreateIndividualClient(
-    [FromBody] Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Request request,
-    [FromServices] IRequestHandler<
-        Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Request,
-        Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response> handler
-)
-{
-    var result = await handler.Handle(request, CancellationToken.None);
-
-    if (result.IsSuccess)
+    private static async Task<Results<Created<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>, ProblemHttpResult>>
+        CreateIndividualClient(
+            [FromBody] Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Request request,
+            [FromServices] IRequestHandler<
+                Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Request,
+                Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response> handler)
     {
-        // Retorna 201
-        return TypedResults.Created(
-            $"/api/v1/clients/individuals/{result.Data?.Id}",
-            result
-        );
+        var result = await handler.Handle(request, CancellationToken.None);
+        return result.IsSuccess
+            ? TypedResults.Created($"/api/v1/clients/individuals/{result.Data?.Id}", result)
+            : TypedResults.Problem(result.ToProblemDetails());
     }
-
-    // Se não houve sucesso, tratamos via switch:
-    switch (result.Status)
-    {
-        case 400:
-            return TypedResults.BadRequest(result);
-
-        case 404:
-            return TypedResults.NotFound(result);
-
-        case 500:
-            // Precisamos devolver JSON no corpo, mas não existe
-            // "InternalServerError<T>" nativo. Então fazemos:
-            return (Results<
-                Created<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                BadRequest<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                NotFound<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                StatusCodeHttpResult
-            >)Results.Json(result, statusCode: 500);
-
-        default:
-            // Para status custom (418, 501, etc.)
-            return (Results<
-                Created<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                BadRequest<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                NotFound<Domain.Contexts.ClientContext.UseCases.CreateIndividualClient.Response>,
-                StatusCodeHttpResult
-            >)Results.Json(result, statusCode: result.Status);
-    }
-}
-
 }

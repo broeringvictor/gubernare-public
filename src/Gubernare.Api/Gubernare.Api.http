@@ -1,5 +1,130 @@
-﻿### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=JetBrains Rider
-
-###
+﻿{
+  "test_cases": [
+    {
+      "name": "Criar Novo Usuário - Sucesso",
+      "method": "POST",
+      "url": "{{base_url}}/api/v1/account/users",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "João Silva",
+        "email": "joao.silva@example.com",
+        "password": "SenhaSegura123!"
+      },
+      "expected_response": {
+        "status": 201,
+        "schema_ref": "#/components/schemas/Response",
+        "sample": {
+          "data": {
+            "id": "550e8400-e29b-41d4-a716-446655440000",
+            "name": "João Silva",
+            "email": "joao.silva@example.com"
+          },
+          "message": "Usuário criado com sucesso",
+          "status": 201,
+          "isSuccess": true
+        }
+      }
+    },
+    {
+      "name": "Autenticação - Sucesso",
+      "method": "POST",
+      "url": "{{base_url}}/api/v1/account/authenticate",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "email": "joao.silva@example.com",
+        "password": "SenhaSegura123!"
+      },
+      "expected_response": {
+        "status": 200,
+        "schema_ref": "#/components/schemas/Response2",
+        "sample": {
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+            "id": "550e8400-e29b-41d4-a716-446655440000",
+            "name": "João Silva",
+            "email": "joao.silva@example.com",
+            "roles": ["user"]
+          },
+          "message": "Autenticação bem-sucedida",
+          "status": 200,
+          "isSuccess": true
+        }
+      },
+      "save_token": "auth_token" // Salva o token para uso em outros testes
+    },
+    {
+      "name": "Verificar Autenticação - Sucesso",
+      "method": "GET",
+      "url": "{{base_url}}/api/v1/account/authenticated",
+      "headers": {
+        "Authorization": "Bearer {{auth_token}}"
+      },
+      "expected_response": {
+        "status": 200 // Não definido no OpenAPI, mas assume-se sucesso
+      }
+    },
+    {
+      "name": "Criar Contrato - Sucesso",
+      "method": "POST",
+      "url": "{{base_url}}/api/v1/clients/contracts",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{auth_token}}"
+      },
+      "body": {
+        "name": "Contrato Mensal",
+        "type": "Serviço",
+        "description": "Prestação de serviços mensais",
+        "startDate": "2023-10-01T00:00:00Z",
+        "endDate": "2024-10-01T00:00:00Z",
+        "price": 1500.50
+      },
+      "expected_response": {
+        "status": 201,
+        "schema_ref": "#/components/schemas/Response3",
+        "sample": {
+          "data": {
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+            "name": "Contrato Mensal"
+          },
+          "message": "Contrato criado",
+          "status": 201,
+          "isSuccess": true
+        }
+      }
+    },
+    {
+      "name": "Criar Cliente Pessoa Física - Erro (Campo Faltante)",
+      "method": "POST",
+      "url": "{{base_url}}/api/v1/clients/individuals",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "Maria Souza",
+        "email": "maria@example.com"
+        // Faltam campos obrigatórios como CPF, birthDate, etc.
+      },
+      "expected_response": {
+        "status": 400,
+        "schema_ref": "#/components/schemas/ProblemDetails",
+        "sample": {
+          "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+          "title": "Bad Request",
+          "status": 400,
+          "detail": "Campos obrigatórios não preenchidos"
+        }
+      }
+    }
+  ],
+  "config": {
+    "base_url": "http://localhost:5170",
+    "variables": {
+      "auth_token": null // Será preenchido após autenticação
+    }
+  }
+}

@@ -27,12 +27,6 @@ namespace Gubernare.Tests.Entities.Repository
             _contractRepositoryMock = new Mock<Gubernare.Domain.Contexts.ClientContext.UseCases.CreateContract.Contracts.IRepository>();
 
             // Cria instâncias de exemplo para serem usadas nos testes:
-            _individualClient = new IndividualClient(
-                name: "John Doe",
-                email: "johndoe@example.com",
-                phone: "9999-9999",
-                notes: "Cliente VIP"
-            );
 
             _contract = new Contract(
                 name: "Important Contract",
