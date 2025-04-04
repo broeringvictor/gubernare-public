@@ -1,9 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 import re
-
 from selenium.webdriver.common.by import By
-
 
 @dataclass
 class EventoEntity:
@@ -13,67 +11,75 @@ class EventoEntity:
     usuario: str
     documentos: list[str]
     tipo: str = "GERAL"
-    parte_relacionada: str = None
     prazo_status: str = None
     prazo_data_inicio: datetime = None
     prazo_data_fim: datetime = None
-    prazo_detalhes: str = None
 
     @classmethod
     def from_tr_element(cls, tr_element):
-        """Constrói o objeto a partir de um elemento <tr> da tabela de eventos"""
+        # Obtém todas as células (td) da linha
         tds = tr_element.find_elements(By.TAG_NAME, "td")
-
-        # Extração básica
-        numero_evento = tds[0].text.strip().split()[0]
+        
+        # Número do evento: assume que vem na primeira célula
+        numero_evento = tds[0].text.split()[0].strip()
+        
+        # Data do evento: assume que está na segunda célula no formato "dd/mm/yyyy HH:mm:ss"
         data_str = tds[1].text.strip()
-        descricao = tr_element.find_element(By.CLASS_NAME, "infraEventoDescricao").text
-        usuario = tr_element.find_element(By.CLASS_NAME, "infraEventoUsuario").get_attribute("aria-label").split("<br>")[0]
+        event_date = cls._parse_date(data_str)
+        
+        # Descrição: pega o texto da terceira célula
+        descricao = tds[2].text.strip()
+        
+        # Usuário: tenta pegar o primeiro valor do atributo aria-label do elemento com a classe "infraEventoUsuario"
+        try:
+            usuario_elem = tr_element.find_element(By.CLASS_NAME, "infraEventoUsuario")
+            usuario_attr = usuario_elem.get_attribute("aria-label")
+            usuario = usuario_attr.split("<br>")[0].strip() if usuario_attr else usuario_elem.text.strip()
+        except Exception:
+            usuario = ""
+        
+        # Documentos: extrai os textos dos links (se houver)
+        documentos = []
+        try:
+            doc_links = tr_element.find_elements(By.CLASS_NAME, "infraLinkDocumento")
+            documentos = [doc.text.strip() for doc in doc_links if doc.text.strip()]
+        except Exception:
+            pass
 
-        # Documentos
-        documentos = [doc.text for doc in tr_element.find_elements(By.CLASS_NAME, "infraLinkDocumento")]
+        # Se na descrição existir informação de prazo, extrai as datas e status
+        prazo_data_inicio = None
+        prazo_data_fim = None
+        prazo_status = None
+        if "Data inicial da contagem do prazo:" in descricao:
+            inicio_match = re.search(r"Data inicial da contagem do prazo:\s*([\d/]+\s*[\d:]+)", descricao)
+            final_match = re.search(r"Data final:\s*([\d/]+\s*[\d:]+)", descricao)
+            status_match = re.search(r"Status:([A-Z]+)", descricao)
+            if inicio_match:
+                prazo_data_inicio = cls._parse_date(inicio_match.group(1))
+            if final_match:
+                prazo_data_fim = cls._parse_date(final_match.group(1))
+            if status_match:
+                prazo_status = status_match.group(1).strip()
 
-        # Cria objeto base
-        evento = cls(
+        tipo = "PRAZO" if prazo_data_inicio or prazo_data_fim else "GERAL"
+
+        return cls(
             numero_evento=numero_evento,
-            data_hora=cls._parse_date(data_str),
+            data_hora=event_date,
             descricao=descricao,
             usuario=usuario,
-            documentos=documentos
+            documentos=documentos,
+            tipo=tipo,
+            prazo_status=prazo_status,
+            prazo_data_inicio=prazo_data_inicio,
+            prazo_data_fim=prazo_data_fim
         )
-
-        # Detecção e tratamento de prazos
-        if "infraEventoPrazo" in tr_element.get_attribute("class"):
-            evento.tipo = "PRAZO"
-            evento._extrair_dados_prazo(tr_element)
-
-        return evento
-
-    def _extrair_dados_prazo(self, tr_element):
-        """Extrai informações específicas de prazos"""
-        descricao_completa = tr_element.find_element(By.CLASS_NAME, "infraEventoDescricao").text
-
-        # Extração de datas do prazo
-        padrao_data = r"\d{2}/\d{2}/\d{4} \d{2}:\d{2}:\d{2}"
-        datas = re.findall(padrao_data, descricao_completa)
-
-        self.prazo_data_inicio = self._parse_date(datas[0]) if len(datas) > 0 else None
-        self.prazo_data_fim = self._parse_date(datas[1]) if len(datas) > 1 else None
-
-        # Status do prazo
-        if "infraEventoPrazoFechado" in tr_element.get_attribute("class"):
-            self.prazo_status = "FECHADO"
-        elif "infraEventoPrazoAberto" in tr_element.get_attribute("class"):
-            self.prazo_status = "ABERTO"
-
-        # Parte relacionada
-        parte_element = tr_element.find_elements(By.CLASS_NAME, "infraEventoPrazoParte")
-        self.parte_relacionada = parte_element[0].text if parte_element else None
 
     @staticmethod
     def _parse_date(date_str):
-        """Converte strings de data no formato dd/mm/yyyy HH:mm:ss para datetime"""
+        """Converte uma string no formato 'dd/mm/yyyy HH:mm:ss' para um objeto datetime.
+           Retorna None se a conversão falhar."""
         try:
             return datetime.strptime(date_str, "%d/%m/%Y %H:%M:%S")
-        except:
+        except Exception:
             return None

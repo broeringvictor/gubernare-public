@@ -19,6 +19,7 @@ options = Options()
 options.add_argument("--disable-gpu")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-popup-blocking")
 # options.add_argument("--headless")
 # Inicializa o undetected_chromedriver com as opções definidas
 driver = uc.Chrome(options=options, use_subprocess=True)
@@ -42,17 +43,12 @@ resultado_captura = capture.execute()
 
 resultados = []
 for resultado in resultados:
-    if resultado['status'] == 'FALHA':
-        print(f"❌ Falha no processo {resultado['numero_processo']} após {resultado['tentativas']} tentativas")
-    else:
-        print(f"✅ Sucesso em {resultado['numero_processo']} com {len(resultado['eventos'])} eventos capturados")
+    print(f"Processo: {resultado.numero_processo}")
+    print(f"Eventos: {resultado.eventos}")
+    print(f"Data do último evento: {resultado.data_ultimo_evento}")
+    print("-" * 40)
 
-    for evento in resultado['eventos']:
-        if evento.tipo == 'PRAZO':
-            print(f"  ⏳ Prazo {evento.numero_evento}: {evento.prazo_status}")
-time.sleep(5)
 
-# Espera o usuário digitar "m" para fechar
 while True:
     user_input = input('Digite "m" para fechar o navegador: ').strip().lower()
     if user_input == "m":

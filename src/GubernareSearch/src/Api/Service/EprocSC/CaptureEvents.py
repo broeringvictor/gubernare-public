@@ -21,12 +21,9 @@ class CaptureEvents:
         """
         for attempt in range(self.max_retries):
             try:
-                # Acessa a página base com a lista de processos.
-                self.driver.get(self.base_url)
-
-                # Utiliza o texto visível do link para encontrar o elemento
+                # Localiza o link pelo texto visível
                 link = WebDriverWait(self.driver, 15).until(
-                    EC.element_to_be_clickable((By.LINK_TEXT, processo.numero_processo))
+                    EC.element_to_be_clickable((By.LINK_TEXT, processo.numero_processo.strip()))
                 )
 
                 # Rolagem e clique no link
@@ -35,10 +32,13 @@ class CaptureEvents:
                 )
                 self.driver.execute_script("arguments[0].click();", link)
 
-                # Aguarda a presença da tabela de eventos na página de detalhes.
+                # Se o link abre em nova aba, muda o foco para ela
+                if len(self.driver.window_handles) > 1:
+                    self.driver.switch_to.window(self.driver.window_handles[-1])
+
+                # Aguarda que a tabela de eventos esteja presente
                 WebDriverWait(self.driver, 20).until(
-                    lambda d: "consultar_processo" in d.current_url and
-                            d.find_element(By.CSS_SELECTOR, "#tblEventos")
+                    lambda d: d.find_element(By.CSS_SELECTOR, "#tblEventos")
                 )
                 return True
 
@@ -46,38 +46,19 @@ class CaptureEvents:
                 print(f"Erro de navegação ({attempt+1}/{self.max_retries}): {str(e)}")
                 if attempt == self.max_retries - 1:
                     return False
-                # Tenta um refresh e aguarda um breve período antes de tentar novamente.
                 self.driver.refresh()
                 time.sleep(2)
 
-
-
-
     def _extrair_eventos_pagina(self):
-        """Extração otimizada com seletor específico e tratamento de stale elements"""
+        """Extrai todas as linhas da tabela de eventos sem distinção."""
         try:
+            time.sleep(2)  # Pausa para garantir o carregamento da página
+            print("Iniciando a extração dos dados de eventos...")
             WebDriverWait(self.driver, 25).until(
                 EC.visibility_of_element_located((By.CSS_SELECTOR, "#tblEventos > tbody"))
             )
-
-            # Espera por pelo menos 1 linha de evento
-            WebDriverWait(self.driver, 15).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#tblEventos > tbody > tr[id^='trEvento']"))
-            )
-
-            eventos = []
-            rows = self.driver.find_elements(By.CSS_SELECTOR, "#tblEventos > tbody > tr[id^='trEvento']")
-
-            for row in rows:
-                try:
-                    if row.is_displayed():
-                        eventos.append(EventoEntity.from_tr_element(row))
-                except StaleElementReferenceException:
-                    print("Elemento obsoleto, atualizando lista...")
-                    rows = self.driver.find_elements(By.CSS_SELECTOR, "#tblEventos > tbody > tr[id^='trEvento']")
-                except Exception as e:
-                    print(f"Erro na extração: {str(e)}")
-
+            rows = self.driver.find_elements(By.CSS_SELECTOR, "#tblEventos > tbody > tr")
+            eventos = [row.get_attribute("outerHTML") for row in rows if row.is_displayed()]
             return eventos
 
         except TimeoutException:
@@ -96,8 +77,8 @@ class CaptureEvents:
 
                 eventos = self._extrair_eventos_pagina()
 
-                # Navegação de retorno segura
-                self.driver.execute_script("window.history.go(-1)")
+                # Volta para a página de listagem de processos
+                self.driver.back()
                 WebDriverWait(self.driver, 20).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "table.lista-processos"))
                 )
@@ -106,27 +87,27 @@ class CaptureEvents:
                     "numero_processo": processo.numero_processo,
                     "eventos": eventos,
                     "status": "SUCESSO",
-                    "tentativas": attempt+1
+                    "tentativas": attempt + 1
                 }
 
             except Exception as e:
                 print(f"Tentativa {attempt+1} falhou: {str(e)}")
-                if attempt == self.max_retries-1:
+                if attempt == self.max_retries - 1:
                     return {
                         "numero_processo": processo.numero_processo,
                         "eventos": [],
                         "status": "FALHA",
-                        "tentativas": attempt+1
+                        "tentativas": attempt + 1
                     }
                 self.driver.get(self.base_url)
                 time.sleep(2)
 
-        return {  # Fallback final
-                "numero_processo": processo.numero_processo,
-                "eventos": [],
-                "status": "FALHA",
-                "tentativas": self.max_retries
-                }
+        return {
+            "numero_processo": processo.numero_processo,
+            "eventos": [],
+            "status": "FALHA",
+            "tentativas": self.max_retries
+        }
 
     def execute(self):
         """Execução principal com tratamento de erro no relatório"""
@@ -135,34 +116,18 @@ class CaptureEvents:
             return []
 
         print(f"\n🏁 Iniciando captura para {len(self.processos)} processos")
-
         resultados = []
         for idx, processo in enumerate(self.processos, 1):
             print(f"\n📑 Processando ({idx}/{len(self.processos)}) {processo.numero_processo}")
-
             start_time = time.time()
             resultado = self._processar_processo(processo)
             elapsed = time.time() - start_time
 
-            # Garante que o resultado nunca será None
-            if not resultado:
-                resultado = {
-                    "numero_processo": processo.numero_processo,
-                    "eventos": [],
-                    "status": "FALHA",
-                    "tentativas": self.max_retries
-                }
-
             resultado["tempo_processamento"] = f"{elapsed:.2f}s"
             resultados.append(resultado)
-
-            status_color = "🟢" if resultado["status"] == "SUCESSO" else "🔴"
-            print(f"{status_color} {resultado['status']} | Tentativas: {resultado['tentativas']} | Eventos: {len(resultado['eventos'])} | Tempo: {elapsed:.2f}s")
-
-            self.eventos_coletados.append(resultado)
+            print(f"{'🟢' if resultado['status']=='SUCESSO' else '🔴'} {resultado['status']} | Tentativas: {resultado['tentativas']} | Eventos: {len(resultado['eventos'])} | Tempo: {elapsed:.2f}s")
 
         print("\n📊 Resumo Final:")
         for res in resultados:
             print(f"• {res['numero_processo']}: {res['status']} ({res['tempo_processamento']}) - {len(res['eventos'])} eventos")
-
-        return self.eventos_coletados
+        return resultados
