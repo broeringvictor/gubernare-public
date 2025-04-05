@@ -1,17 +1,16 @@
 import time
-from selenium.common import TimeoutException, StaleElementReferenceException
+from bs4 import BeautifulSoup
+from selenium.common import TimeoutException, StaleElementReferenceException, WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from src.Domain.Entities.EventoEntity import EventoEntity
 
 class CaptureEvents:
     def __init__(self, driver, processos):
         self.driver = driver
         self.processos = processos
-        self.eventos_coletados = []
-        self.max_retries = 3
-        self.base_url = "URL_DA_PAGINA_DE_CONSULTA"  # Atualize com a URL correta
+        self.max_retries = 1
+        self.base_url = self.driver.current_url
 
     def _navegar_para_detalhes_processo(self, processo):
         """
@@ -21,55 +20,64 @@ class CaptureEvents:
         """
         for attempt in range(self.max_retries):
             try:
-                # Localiza o link pelo texto visível
                 link = WebDriverWait(self.driver, 15).until(
                     EC.element_to_be_clickable((By.LINK_TEXT, processo.numero_processo.strip()))
                 )
-
-                # Rolagem e clique no link
                 self.driver.execute_script(
                     "arguments[0].scrollIntoView({behavior: 'instant', block: 'center'});", link
                 )
                 self.driver.execute_script("arguments[0].click();", link)
 
-                # Se o link abre em nova aba, muda o foco para ela
-                if len(self.driver.window_handles) > 1:
-                    self.driver.switch_to.window(self.driver.window_handles[-1])
 
-                # Aguarda que a tabela de eventos esteja presente
-                WebDriverWait(self.driver, 20).until(
-                    lambda d: d.find_element(By.CSS_SELECTOR, "#tblEventos")
-                )
                 return True
 
             except Exception as e:
                 print(f"Erro de navegação ({attempt+1}/{self.max_retries}): {str(e)}")
                 if attempt == self.max_retries - 1:
                     return False
-                self.driver.refresh()
+                # Tenta recarregar a página de listagem de processos usando a URL atual
+                try:
+                    self.driver.get(self.base_url)
+                except WebDriverException as get_e:
+                    print(f"Erro ao recarregar a página: {str(get_e)}")
                 time.sleep(2)
-
     def _extrair_eventos_pagina(self):
-        """Extrai todas as linhas da tabela de eventos sem distinção."""
+        """Extrai todas as linhas da tabela de eventos."""
         try:
-            time.sleep(2)  # Pausa para garantir o carregamento da página
-            print("Iniciando a extração dos dados de eventos...")
-            WebDriverWait(self.driver, 25).until(
-                EC.visibility_of_element_located((By.CSS_SELECTOR, "#tblEventos > tbody"))
-            )
-            rows = self.driver.find_elements(By.CSS_SELECTOR, "#tblEventos > tbody > tr")
-            eventos = [row.get_attribute("outerHTML") for row in rows if row.is_displayed()]
-            return eventos
+            from bs4 import BeautifulSoup
+            import time
 
-        except TimeoutException:
-            print("Nenhum evento encontrado na página")
-            return []
+            # Aguarda carregamento da tabela
+            time.sleep(2)
+            html = self.driver.page_source
+            soup = BeautifulSoup(html, 'html.parser')
+
+            # Localiza a tabela de eventos pelo ID 'tblEventos'
+            tabela = soup.find('table', summary="Eventos")
+            if tabela:
+
+                rows = tabela.find_all('tr')
+
+                # Inicializa uma lista para armazenar os dados
+                data = []
+
+                # Itera sobre as linhas, começando da segunda (índice 1) para ignorar o cabeçalho
+                for row in rows[1:]:
+                    # Encontra todas as células da linha
+                    cells = row.find_all('td')
+
+                    # Extrai o texto de cada célula e adiciona à lista de dados
+                    data.append([cell.get_text(strip=True) for cell in cells])
+
+                return data
+
         except Exception as e:
-            print(f"Erro crítico na extração: {str(e)}")
-            return []
+                print(f"Erro ao extrair eventos: {str(e)}")
+                return []
+
 
     def _processar_processo(self, processo):
-        """Fluxo principal com tratamento de erro reforçado"""
+        """Fluxo principal com tratamento de erro reforçado para um processo."""
         for attempt in range(self.max_retries):
             try:
                 if not self._navegar_para_detalhes_processo(processo):
@@ -99,7 +107,10 @@ class CaptureEvents:
                         "status": "FALHA",
                         "tentativas": attempt + 1
                     }
-                self.driver.get(self.base_url)
+                try:
+                    self.driver.get(self.base_url)
+                except WebDriverException as get_e:
+                    print(f"Erro ao recarregar a página: {str(get_e)}")
                 time.sleep(2)
 
         return {
@@ -110,7 +121,7 @@ class CaptureEvents:
         }
 
     def execute(self):
-        """Execução principal com tratamento de erro no relatório"""
+        """Execução principal com tratamento de erro no relatório."""
         if not self.processos:
             print("Nenhum processo disponível para captura.")
             return []
