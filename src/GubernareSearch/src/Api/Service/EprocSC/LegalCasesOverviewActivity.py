@@ -5,7 +5,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
+from bs4 import BeautifulSoup, SoupStrainer
 from src.Domain.Entities.EprocOverviewEntity import EprocOverviewEntity
 
 load_dotenv()
@@ -40,7 +40,7 @@ class LegalCasesOverviewActivity:
             menu_textual_btn.click()
             print("Botão 'Menu Textual' clicado com sucesso.")
 
-            # Verifica CAPTCHA após clique
+            
             if self._handle_captcha():
                 # Re-tenta após CAPTCHA
                 self._click_menu_textual()
@@ -61,7 +61,7 @@ class LegalCasesOverviewActivity:
             print("Botão 'Relação de Processos' clicado com sucesso.")
 
             # Verificação adicional de carregamento
-            WebDriverWait(self.driver, 20).until(
+            WebDriverWait(self.driver, 2).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "tr.infraTrClara"))
             )
 
@@ -78,7 +78,7 @@ class LegalCasesOverviewActivity:
 
     def _get_quantidade_processos(self):
         try:
-            caption_element = WebDriverWait(self.driver, 10).until(
+            caption_element = WebDriverWait(self.driver, 1).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "caption.infraCaption")))
             caption_text = caption_element.text
             match = re.search(r"\((\d+) registro", caption_text)
@@ -96,53 +96,64 @@ class LegalCasesOverviewActivity:
             print(f"Erro ao obter quantidade de processos: {str(e)}")
             return "0"
 
+
+
     def _processar_linhas(self):
         try:
-            rows = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR, "tr.infraTrClara"))
+            WebDriverWait(self.driver, 5).until(
+                EC.presence_of_element_located((By.ID, 'divInfraAreaTabela'))
             )
-
-            for index, row in enumerate(rows):
+    
+            soup_filter = SoupStrainer('div', {'id': 'divInfraAreaTabela'})
+            soup = BeautifulSoup(self.driver.page_source, 'lxml', parse_only=soup_filter)
+            tabela = soup.find('table', class_='infraTable')
+    
+            if not tabela:
+                print("Tabela de processos não encontrada.")
+                return
+    
+            linhas = tabela.find_all('tr', class_=['infraTrClara', 'infraTrEscura'])
+    
+            for index, row in enumerate(linhas):
                 try:
-                    # Extração de dados com tratamento individual
-                    data_classe = row.get_attribute("data-classe") or ""
-                    data_competencia = row.get_attribute("data-competencia") or ""
-
-                    tds = row.find_elements(By.TAG_NAME, "td")
-                    if len(tds) < 11:
-                        print(f"Linha {index+1}: Número inválido de colunas ({len(tds)})")
+                    data_classe = row.get('data-classe', '')
+                    data_competencia = row.get('data-competencia', '')
+    
+                    colunas = row.find_all('td')
+                    if len(colunas) < 11:
+                        print(f"Linha {index+1}: Número inválido de colunas ({len(colunas)})")
                         continue
-
-                    # Processa cada campo com tratamento
-                    td_process = tds[1].text.split("\n")
+    
+                    td_process = colunas[1].get_text(separator="\n").strip().split("\n")
                     numero_processo = td_process[0].strip() if td_process else ""
                     vara = td_process[1].strip() if len(td_process) > 1 else ""
-
+    
                     processo = EprocOverviewEntity(
                         numero_processo=numero_processo,
                         vara=vara,
-                        procedimento=tds[2].text.strip(),
-                        parte_ativa=tds[3].text.strip(),
-                        parte_passiva=tds[4].text.strip(),
-                        competencia=tds[5].text.strip(),
-                        assunto=tds[6].text.strip(),
-                        ultima_movimentacao=tds[7].text.strip(),
-                        data_ultima_movimentacao=tds[8].text.strip(),
-                        data_distribuicao=tds[9].text.strip(),
-                        valor_causa=tds[10].text.strip(),
+                        procedimento=colunas[2].get_text(strip=True),
+                        parte_ativa=colunas[3].get_text(strip=True),
+                        parte_passiva=colunas[4].get_text(strip=True),
+                        competencia=colunas[5].get_text(strip=True),
+                        assunto=colunas[6].get_text(strip=True),
+                        ultima_movimentacao=colunas[7].get_text(strip=True),
+                        data_ultima_movimentacao=colunas[8].get_text(strip=True),
+                        data_distribuicao=colunas[9].get_text(strip=True),
+                        valor_causa=colunas[10].get_text(strip=True),
                         data_classe=data_classe,
                         data_competencia=data_competencia
                     )
-
+    
                     self.lista_processos.append(processo)
-
+    
                 except Exception as linha_error:
                     print(f"Erro ao processar linha {index+1}: {str(linha_error)}")
                     continue
-
+    
         except Exception as e:
-            print(f"Erro geral ao processar linhas: {str(e)}")
-            raise
+                    print(f"Erro geral ao processar linhas: {str(e)}")
+                    raise
+
 
     def execute(self):
         try:
@@ -155,8 +166,9 @@ class LegalCasesOverviewActivity:
             self._processar_linhas()
 
             print("\n----- Processos encontrados -----")
-            for p in self.lista_processos:
-                print(p)
+            for processo in self.lista_processos:
+                
+                print(processo.numero_processo)
 
             return self.lista_processos
 

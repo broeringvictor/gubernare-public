@@ -1,0 +1,708 @@
+{
+    "numero_processo": "5020076-66.2022.8.24.0091",
+    "status": "SUCESSO",
+    "tentativas": 1,
+    "eventos": [
+        [],
+        [
+            "150",
+            "28/03/2025 01:09:07",
+            "Decorrido prazo\n- Refer. aos Eventos: 137, 138, 139 e 140",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "149",
+            "24/03/2025 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 145, 146, 147 e 148",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "148",
+            "12/03/2025 15:24:02",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 144\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 14/04/2025 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "147",
+            "12/03/2025 15:24:01",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 144\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 14/04/2025 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "146",
+            "12/03/2025 15:24:01",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 144\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 14/04/2025 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "145",
+            "12/03/2025 15:24:01",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 144\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 14/04/2025 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "144",
+            "12/03/2025 15:24:01",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "143",
+            "12/03/2025 15:23:01",
+            "Juntado(a)",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Extrato Bancário1\nExtrato Bancário2\nExtrato Bancário3\nExtrato Bancário4\nExtrato Bancário5\nExtrato Bancário6\nExtrato Bancário7\nExtrato Bancário8\nExtrato Bancário9\nExtrato Bancário10\nExtrato Bancário11\nExtrato Bancário12\nExtrato Bancário13\nExtrato Bancário14\nExtrato Bancário15\nExtrato Bancário16\nExtrato Bancário17\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "142",
+            "06/03/2025 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 137, 138, 139 e 140",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "141",
+            "27/02/2025 15:14:10",
+            "Audiência de conciliação\n- realizada sem conciliação - Local Sala de audiências da 1ª Vara da Família - 24/02/2025 16:00. Refer. Evento 124",
+            "a.beatriz\nANA BEATRIZ ROSA SILVA\nESTAGIÁRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "140",
+            "24/02/2025 18:14:46",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 136\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n150 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/03/2025 00:00:00\nData final: 27/03/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "139",
+            "24/02/2025 18:14:43",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 136\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n150 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/03/2025 00:00:00\nData final: 27/03/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "138",
+            "24/02/2025 18:14:41",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 136\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n150 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/03/2025 00:00:00\nData final: 27/03/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "137",
+            "24/02/2025 18:14:38",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 136\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n150 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/03/2025 00:00:00\nData final: 27/03/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "136",
+            "24/02/2025 18:14:35",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "TERMOAUD1"
+        ],
+        [
+            "135",
+            "24/02/2025 16:07:16",
+            "Conclusos para despacho",
+            "RAFADECAMPOS\nRAFAELA FARINELLA DE CAMPOS\nESTAGIÁRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "134",
+            "11/02/2025 01:09:25",
+            "Decorrido prazo\n- Refer. aos Eventos: 126, 127, 128 e 129",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "133",
+            "19/12/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 126, 127, 128 e 129",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "132",
+            "11/12/2024 11:06:06",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 130\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "131",
+            "11/12/2024 11:05:30",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 130\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "130",
+            "09/12/2024 14:58:17",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 125\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n132 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 12/12/2024 00:00:00\nData final: 21/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "129",
+            "09/12/2024 14:58:15",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 125\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n134 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/01/2025 00:00:00\nData final: 10/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "128",
+            "09/12/2024 14:58:13",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 125\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n134 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/01/2025 00:00:00\nData final: 10/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "127",
+            "09/12/2024 14:58:11",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 125\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n134 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/01/2025 00:00:00\nData final: 10/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "126",
+            "09/12/2024 14:58:09",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 125\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n134 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/01/2025 00:00:00\nData final: 10/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "125",
+            "09/12/2024 14:58:06",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "124",
+            "09/12/2024 14:29:21",
+            "Audiência de conciliação\n- designada - Local Sala de audiências da 1ª Vara da Família - 24/02/2025 16:00",
+            "CMO\nCAMILE MELLO DE OLIVEIRA\nESTAGIÁRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "123",
+            "22/11/2024 01:18:23",
+            "Decorrido prazo\n- Refer. aos Eventos: 115, 116, 117 e 118",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "122",
+            "12/11/2024 10:46:42",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "121",
+            "11/11/2024 17:27:30",
+            "PETIÇÃO\n- Refer. ao Evento: 110\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "120",
+            "28/10/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 115, 116, 117 e 118",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "119",
+            "23/10/2024 20:28:43",
+            "Juntada de certidão\n- suspensão do prazo - Motivo: FERIADO NACIONAL em 28/10/2024",
+            "raimundo\nRODRIGO VALCELI RAIMUNDO\nADMINISTRADOR DO SISTEMA",
+            "Evento não gerou documento"
+        ],
+        [
+            "118",
+            "18/10/2024 15:09:41",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 114\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n123 - Decorrido prazo\n)\nData inicial da contagem do prazo: 30/10/2024 00:00:00\nData final: 21/11/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "117",
+            "18/10/2024 15:09:41",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 114\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n123 - Decorrido prazo\n)\nData inicial da contagem do prazo: 30/10/2024 00:00:00\nData final: 21/11/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "116",
+            "18/10/2024 15:09:41",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 114\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n123 - Decorrido prazo\n)\nData inicial da contagem do prazo: 30/10/2024 00:00:00\nData final: 21/11/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "115",
+            "18/10/2024 15:09:41",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 114\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n123 - Decorrido prazo\n)\nData inicial da contagem do prazo: 30/10/2024 00:00:00\nData final: 21/11/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "114",
+            "18/10/2024 15:09:41",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "113",
+            "18/10/2024 14:11:39",
+            "Remetidos os Autos\n- FNSEASSOC -> FNSE01FM",
+            "cclaudino\nCRISTIANE SELMA CLAUDINO\nCHEFE DE CARTÓRIO\nServiço Social - Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "112",
+            "18/10/2024 14:06:46",
+            "Serviço Social\n- Estudo Social",
+            "cclaudino\nCRISTIANE SELMA CLAUDINO\nCHEFE DE CARTÓRIO\nServiço Social - Capital - Eduardo Luz",
+            "ESTUDO1"
+        ],
+        [
+            "111",
+            "30/09/2024 14:30:48",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 110\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "110",
+            "20/09/2024 14:03:03",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 109\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n121 - PETIÇÃO\n)\nData inicial da contagem do prazo: 01/10/2024 00:00:00\nData final: 12/11/2024 23:59:59",
+            "athayde\nDENIS JOSE DE MATTOS ATHAYDE JUNIOR\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "109",
+            "20/09/2024 14:03:03",
+            "Ato ordinatório praticado",
+            "athayde\nDENIS JOSE DE MATTOS ATHAYDE JUNIOR\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "108",
+            "20/09/2024 14:02:24",
+            "Juntada de certidão",
+            "athayde\nDENIS JOSE DE MATTOS ATHAYDE JUNIOR\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "CERT1"
+        ],
+        [
+            "107",
+            "25/06/2024 12:56:31",
+            "Juntado(a)",
+            "lucas.daniel\nLUCAS DANIEL COSTA\nDISTRIBUIÇÃO\nDistribuição - Capital - Eduardo Luz",
+            "EMAIL1"
+        ],
+        [
+            "106",
+            "24/06/2024 13:39:19",
+            "Juntado(a)",
+            "marcela.oliveira\nMARCELA SANTOS OLIVEIRA\nSERVIDOR UNIDADE JUDICIAL\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "INF1"
+        ],
+        [
+            "105",
+            "12/06/2024 01:06:22",
+            "Decorrido prazo\n- Refer. aos Eventos: 98, 99 e 100",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "104",
+            "11/06/2024 17:19:04",
+            "Expedição de ofício",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "OFIC1"
+        ],
+        [
+            "103",
+            "23/05/2024 16:45:24",
+            "Serviço Social\n- Estudo Social",
+            "cclaudino\nCRISTIANE SELMA CLAUDINO\nCHEFE DE CARTÓRIO\nServiço Social - Capital - Eduardo Luz",
+            "INF1"
+        ],
+        [
+            "102",
+            "18/05/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 98, 99 e 100",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "101",
+            "09/05/2024 09:31:20",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO",
+            "SC031897\nLEONARDO MUNIZ DE ANDRADE\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "100",
+            "08/05/2024 18:54:09",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 97\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n105 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/05/2024 00:00:00\nData final: 11/06/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "99",
+            "08/05/2024 18:54:07",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 97\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n105 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/05/2024 00:00:00\nData final: 11/06/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "98",
+            "08/05/2024 18:54:05",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 97\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n105 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/05/2024 00:00:00\nData final: 11/06/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "97",
+            "08/05/2024 18:54:03",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "96",
+            "07/05/2024 10:58:01",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "95",
+            "06/05/2024 17:43:36",
+            "PETIÇÃO\n- Refer. ao Evento: 93\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "94",
+            "25/03/2024 18:08:07",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 93\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "93",
+            "15/03/2024 18:00:26",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 92\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n95 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/03/2024 00:00:00\nData final: 09/05/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "92",
+            "15/03/2024 18:00:26",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "91",
+            "27/02/2024 22:28:32",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. aos Eventos: 80, 81 e 83",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "90",
+            "15/02/2024 16:09:43",
+            "PETIÇÃO\n- Refer. ao Evento: 82\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)",
+            "SC031897\nLEONARDO MUNIZ DE ANDRADE\nADVOGADO",
+            "PET1\nBOC2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "89",
+            "02/02/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 80, 81, 82 e 83",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "88",
+            "25/01/2024 13:33:15",
+            "Remetidos os Autos\n- FNSE01FM -> FNSEASSOC",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "87",
+            "25/01/2024 13:25:50",
+            "Juntada de peças digitalizadas",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "PROTOCOLO DIGITAL1"
+        ],
+        [
+            "86",
+            "24/01/2024 12:20:35",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 84\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "85",
+            "24/01/2024 12:20:12",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 84\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "84",
+            "23/01/2024 18:50:04",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n86 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 25/01/2024 00:00:00\nData final: 08/03/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "83",
+            "23/01/2024 18:50:02",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n91 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 05/02/2024 00:00:00\nData final: 27/02/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "82",
+            "23/01/2024 18:49:59",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n90 - PETIÇÃO\n)\nData inicial da contagem do prazo: 05/02/2024 00:00:00\nData final: 27/02/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "81",
+            "23/01/2024 18:49:57",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n91 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 05/02/2024 00:00:00\nData final: 27/02/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "80",
+            "23/01/2024 18:49:56",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n91 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 05/02/2024 00:00:00\nData final: 27/02/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "79",
+            "23/01/2024 18:49:54",
+            "Decisão interlocutória",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "78",
+            "27/09/2023 11:24:48",
+            "Conclusos para decisão",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "77",
+            "19/09/2023 20:47:17",
+            "PETIÇÃO\n- Refer. aos Eventos: 71, 72 e 74",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "76",
+            "19/09/2023 14:01:20",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 73\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)",
+            "SC031897\nLEONARDO MUNIZ DE ANDRADE\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "75",
+            "28/08/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 71, 72, 73 e 74",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "74",
+            "18/08/2023 17:19:19",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 70\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n77 - PETIÇÃO\n)\nData inicial da contagem do prazo: 29/08/2023 00:00:00\nData final: 19/09/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "73",
+            "18/08/2023 17:19:18",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 70\n(\nRÉU\n-  LUIZ ALEXANDRE MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n76 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 29/08/2023 00:00:00\nData final: 19/09/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "72",
+            "18/08/2023 17:19:16",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 70\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n77 - PETIÇÃO\n)\nData inicial da contagem do prazo: 29/08/2023 00:00:00\nData final: 19/09/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "71",
+            "18/08/2023 17:19:15",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 70\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n77 - PETIÇÃO\n)\nData inicial da contagem do prazo: 29/08/2023 00:00:00\nData final: 19/09/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "70",
+            "18/08/2023 17:19:13",
+            "Determinada a intimação",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "69",
+            "10/07/2023 18:13:01",
+            "Juntado(a)",
+            "monacarvalho\nMONA CARVALHO DE SOUSA MARQUES\nDISTRIBUIÇÃO\nDistribuição - Capital - Eduardo Luz",
+            "EMAIL1\nCOMP2\nCHEQ3\nCHEQ4\nCHEQ5\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "68",
+            "23/06/2023 12:37:53",
+            "Juntada de Carta pelo Correio\n- Comprovante de entrega - Refer. ao Evento: 65\nDestinatário: VIGILÂNCIA TRIÂNGULO LTDA\nEntregue em: 20/06/2023",
+            "CORREIOS\nSISTEMA VPOST - Correios\nSISTEMA EPROC",
+            "AR1"
+        ],
+        [
+            "67",
+            "21/06/2023 15:27:54",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "66",
+            "20/06/2023 16:21:04",
+            "PETIÃÃO\n- Refer. ao Evento: 62\n(\nMP\n-  MINISTÃRIO PÃBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÃÃO1"
+        ],
+        [
+            "65",
+            "07/06/2023 18:01:04",
+            "ExpediÃ§Ã£o de ofÃ­cio\n- 1 carta (Devolvida pelos Correios)\nVIGILÃNCIA TRIÃNGULO LTDA - 1 carta - DevoluÃ§Ã£o no Evento: 68",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "OFIC1"
+        ],
+        [
+            "64",
+            "22/05/2023 17:03:00",
+            "PETIÃÃO",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "63",
+            "06/05/2023 12:07:53",
+            "Confirmada a intimaÃ§Ã£o eletrÃ´nica\n- Refer. ao Evento: 62\n(\nMP\n-  MINISTÃRIO PÃBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "62",
+            "27/04/2023 11:59:27",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\nRefer.  ao Evento 61\n(\nMP\n-  MINISTÃRIO PÃBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n66 - PETIÃÃO\n)\nData inicial da contagem do prazo: 09/05/2023 00:00:00\nData final: 20/06/2023 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "61",
+            "27/04/2023 11:59:27",
+            "Ato ordinatÃ³rio praticado",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "60",
+            "14/04/2023 01:09:40",
+            "Decorrido prazo\n- Refer. aos Eventos: 47, 48 e 50",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "59",
+            "13/04/2023 22:04:10",
+            "RÃPLICA\n- Refer. aos Eventos: 56, 55 e 57",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "RÃPLICA1"
+        ],
+        [
+            "58",
+            "07/04/2023 23:59:59",
+            "Confirmada a intimaÃ§Ã£o eletrÃ´nica\n- Refer. aos Eventos: 55, 56 e 57",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÃNICO",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "57",
+            "28/03/2023 11:51:34",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\nRefer.  ao Evento 54\n(\nAUTOR\n-  VITORIA DOS SANTOS SCHWANCK)\nPrazo: 15 dias Status:FECHADO\n(\n59 - RÃPLICA\n)\nData inicial da contagem do prazo: 11/04/2023 00:00:00\nData final: 03/05/2023 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "56",
+            "28/03/2023 11:51:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\nRefer.  ao Evento 54\n(\nAUTOR\n-  AURORA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n59 - RÃPLICA\n)\nData inicial da contagem do prazo: 11/04/2023 00:00:00\nData final: 03/05/2023 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "55",
+            "28/03/2023 11:51:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\nRefer.  ao Evento 54\n(\nAUTOR\n-  ALICE HILDA DOS SANTOS MARTINS)\nPrazo: 15 dias Status:FECHADO\n(\n59 - RÃPLICA\n)\nData inicial da contagem do prazo: 11/04/2023 00:00:00\nData final: 03/05/2023 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "54",
+            "28/03/2023 11:51:33",
+            "Ato ordinatÃ³rio praticado",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÃRIO\n1Âª Vara da FamÃ­lia e ÃrfÃ£os da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "53",
+            "19/03/2023 23:59:59",
+            "Confirmada a intimaÃ§Ã£o eletrÃ´nica\n- Refer. aos Eventos: 47, 48 e 50",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÃNICO",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "52",
+            "13/03/2023 17:12:53",
+            "CONTESTAÃÃO\n- Refer. ao Evento: 49",
+            "SC031897\nLEONARDO MUNIZ DE ANDRADE\nADVOGADO",
+            "COMP1\nCOMP2\nCOMP3\nCHEQ4\nCHEQ5\nCHEQ6\nCONTRLOC7\nCONTRLOC8\nCONTRLOC9\nCONTRLOC10\nCOMP11\nCONT12\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "51",
+            "13/03/2023 17:12:53",
+            "Confirmada a intimaÃ§Ã£o eletrÃ´nica\n- Refer. ao Evento: 49",
+            "SC031897\nLEONARDO MUNIZ DE ANDRADE\nADVOGADO",
+            "Evento nÃ£o gerou documento"
+        ]
+    ]
+}

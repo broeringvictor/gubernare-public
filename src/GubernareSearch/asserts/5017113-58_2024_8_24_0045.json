@@ -1,0 +1,512 @@
+{
+    "numero_processo": "5017113-58.2024.8.24.0045",
+    "status": "SUCESSO",
+    "tentativas": 1,
+    "eventos": [
+        [],
+        [
+            "72",
+            "02/04/2025 16:06:27",
+            "Expedição de ofício\n- 1 carta (Enviada para Correios em 03/04/2025)\nCAGED - CADASTRO GERAL DE EMPREGO E DESEMPREGO - 1 carta",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "OFIC1"
+        ],
+        [
+            "71",
+            "02/04/2025 15:54:58",
+            "Remetidos os Autos\n- PACFM -> FNSCONV",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "70",
+            "31/03/2025 16:26:44",
+            "PETIÇÃO\n- Refer. ao Evento: 61\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1\nDOCUMENTACAO2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "69",
+            "08/03/2025 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 61\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "68",
+            "26/02/2025 16:33:31",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. aos Eventos: 60 e 62",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "67",
+            "26/02/2025 16:33:31",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 62\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "66",
+            "26/02/2025 16:33:31",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 60\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "65",
+            "26/02/2025 16:17:09",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 63\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "64",
+            "26/02/2025 16:16:19",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 63\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "63",
+            "26/02/2025 15:16:47",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 59\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n65 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 27/02/2025 00:00:00\nData final: 21/03/2025 23:59:59\nDomicílio Judicial Eletrônico: Enviado em 26/02/2025 15:33:05",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "62",
+            "26/02/2025 15:16:47",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 59\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n68 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 27/02/2025 00:00:00\nData final: 21/03/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "61",
+            "26/02/2025 15:16:46",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 59\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n70 - PETIÇÃO\n)\nData inicial da contagem do prazo: 11/03/2025 00:00:00\nData final: 31/03/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "60",
+            "26/02/2025 15:16:46",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 59\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n68 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 27/02/2025 00:00:00\nData final: 21/03/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "59",
+            "26/02/2025 15:16:46",
+            "Decisão interlocutória",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "58",
+            "26/02/2025 13:01:15",
+            "Conclusos para decisão",
+            "PAULAC\nPAULA NUNES DA COSTA\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "57",
+            "12/02/2025 16:38:05",
+            "PETIÇÃO\n- Refer. aos Eventos: 55 e 54",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "PET1\nCALC2\nCALC3\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "56",
+            "02/02/2025 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 54 e 55",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "55",
+            "23/01/2025 10:19:49",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 53\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n57 - PETIÇÃO\n)\nData inicial da contagem do prazo: 04/02/2025 00:00:00\nData final: 24/02/2025 23:59:59",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "54",
+            "23/01/2025 10:19:49",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 53\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n57 - PETIÇÃO\n)\nData inicial da contagem do prazo: 04/02/2025 00:00:00\nData final: 24/02/2025 23:59:59",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "53",
+            "23/01/2025 10:19:48",
+            "Ato ordinatório praticado",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "52",
+            "23/01/2025 10:18:21",
+            "Juntada de certidão",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "CERT1"
+        ],
+        [
+            "51",
+            "20/12/2024 01:06:13",
+            "Decorrido prazo\n- Refer. ao Evento: 49\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "50",
+            "28/11/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 49\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "49",
+            "18/11/2024 18:47:02",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 48\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n51 - Decorrido prazo\n)\nData inicial da contagem do prazo: 29/11/2024 00:00:00\nData final: 19/12/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "48",
+            "18/11/2024 18:47:02",
+            "Despacho",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "47",
+            "18/11/2024 18:31:39",
+            "Conclusos para despacho\n- Retificação de Conclusão",
+            "VF16640\nVANESSA FELTRIN\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "46",
+            "14/11/2024 18:31:25",
+            "Conclusos para julgamento",
+            "secautoloc\nAUTOMATIZAÇÃO DE LOCALIZADORES\nSISTEMA EPROC",
+            "Evento não gerou documento"
+        ],
+        [
+            "45",
+            "14/11/2024 18:31:25",
+            "PETIÇÃO\n- Refer. ao Evento: 43\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "44",
+            "14/11/2024 18:31:02",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 43\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "43",
+            "11/11/2024 18:38:02",
+            "Expedida/certificada a intimação eletrônica\n- Vista ao MP para Parecer\nRefer.  ao Evento 42\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n45 - PETIÇÃO\n)\nData inicial da contagem do prazo: 18/11/2024 00:00:00\nData final: 09/12/2024 23:59:59\nDomicílio Judicial Eletrônico: Enviado em 11/11/2024 18:47:47",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "42",
+            "11/11/2024 18:38:02",
+            "Ato ordinatório praticado",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "41",
+            "08/11/2024 17:26:51",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. aos Eventos: 31, 30, 35 e 34",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "40",
+            "08/11/2024 17:26:51",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 34\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "39",
+            "08/11/2024 17:26:51",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 35\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "38",
+            "08/11/2024 17:26:51",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 30\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "37",
+            "08/11/2024 17:26:51",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 31\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "36",
+            "08/11/2024 17:24:40",
+            "PEDIDO DE HOMOLOGAÇÃO DE ACORDO",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "PED HOMOLOG ACOR1"
+        ],
+        [
+            "35",
+            "08/11/2024 11:18:22",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 33\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n41 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 11/11/2024 00:00:00\nData final: 03/12/2024 23:59:59",
+            "costaCGJCAMP\nRAMON DE QUADROS COSTA\nCHEFE DE CARTÓRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "34",
+            "08/11/2024 11:18:22",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 33\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n41 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 11/11/2024 00:00:00\nData final: 03/12/2024 23:59:59",
+            "costaCGJCAMP\nRAMON DE QUADROS COSTA\nCHEFE DE CARTÓRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "33",
+            "08/11/2024 11:18:21",
+            "Ato ordinatório praticado",
+            "costaCGJCAMP\nRAMON DE QUADROS COSTA\nCHEFE DE CARTÓRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "32",
+            "07/11/2024 21:07:59",
+            "Juntada\n- Pesquisa de Ativos Judiciais",
+            "CGJ_CAMP\nAUTOMAÇÃO PROCESSOS CORREGEDORIA",
+            "INF1"
+        ],
+        [
+            "31",
+            "07/11/2024 19:53:03",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 29\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n41 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 11/11/2024 00:00:00\nData final: 03/12/2024 23:59:59",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "30",
+            "07/11/2024 19:53:03",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 29\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n41 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 11/11/2024 00:00:00\nData final: 03/12/2024 23:59:59",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "29",
+            "07/11/2024 19:53:02",
+            "Ato ordinatório praticado",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "28",
+            "05/11/2024 01:02:20",
+            "Decorrido prazo\n- Refer. ao Evento: 23\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "27",
+            "02/10/2024 15:07:57",
+            "Juntada de certidão\n- suspensão do prazo - Motivo: FERIADO NACIONAL em 28/10/2024",
+            "raimundo\nRODRIGO VALCELI RAIMUNDO\nADMINISTRADOR DO SISTEMA",
+            "Evento não gerou documento"
+        ],
+        [
+            "26",
+            "20/09/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 23\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "25",
+            "20/09/2024 15:02:19",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. aos Eventos: 17 e 16",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "24",
+            "19/09/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 16 e 17",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "23",
+            "10/09/2024 21:20:20",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 15\n(\nEXECUTADO\n-  MATHEUS ARAUJO NOBRE)\nPrazo: 30 dias Status:FECHADO\n(\n28 - Decorrido prazo\n)\nData inicial da contagem do prazo: 23/09/2024 00:00:00\nData final: 04/11/2024 23:59:59",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "22",
+            "10/09/2024 21:18:45",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: THOMAZ LISBOA NOBRE. Justiça gratuita: Deferida.",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "21",
+            "10/09/2024 21:18:45",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: CAROLINA BEZERRA DA SILVA LISBOA. Justiça gratuita: Deferida.",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "20",
+            "10/09/2024 11:28:36",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 18\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "19",
+            "10/09/2024 11:27:50",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 18\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "18",
+            "09/09/2024 18:58:13",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 15\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n20 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 11/09/2024 00:00:00\nData final: 01/10/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "17",
+            "09/09/2024 18:58:13",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 15\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n25 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 20/09/2024 00:00:00\nData final: 10/10/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "16",
+            "09/09/2024 18:58:13",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 15\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n25 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 20/09/2024 00:00:00\nData final: 10/10/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "15",
+            "09/09/2024 18:58:12",
+            "Decisão interlocutória",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "14",
+            "09/09/2024 17:32:34",
+            "Conclusos para decisão",
+            "acs22853\nANGELA CRISTINA STOCKER\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "13",
+            "05/09/2024 10:37:26",
+            "PETIÇÃO\n- Refer. aos Eventos: 7 e 6",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "PET1\nCNPJ2\nEND3\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "12",
+            "05/09/2024 10:37:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 6\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "11",
+            "05/09/2024 10:37:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 7\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "10",
+            "04/09/2024 19:39:21",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 8\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "9",
+            "04/09/2024 19:39:10",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 8\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "8",
+            "04/09/2024 18:52:26",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 5\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n10 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 05/09/2024 00:00:00\nData final: 25/09/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "7",
+            "04/09/2024 18:52:26",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 5\n(\nEXEQUENTE\n-  THOMAZ LISBOA NOBRE)\nPrazo: 15 dias Status:FECHADO\n(\n13 - PETIÇÃO\n)\nData inicial da contagem do prazo: 06/09/2024 00:00:00\nData final: 26/09/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "6",
+            "04/09/2024 18:52:26",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 5\n(\nEXEQUENTE\n-  CAROLINA BEZERRA DA SILVA LISBOA)\nPrazo: 15 dias Status:FECHADO\n(\n13 - PETIÇÃO\n)\nData inicial da contagem do prazo: 06/09/2024 00:00:00\nData final: 26/09/2024 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "5",
+            "04/09/2024 18:52:25",
+            "Decisão interlocutória",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "4",
+            "04/09/2024 14:58:18",
+            "Conclusos para decisão",
+            "PAULAC\nPAULA NUNES DA COSTA\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "3",
+            "04/09/2024 11:00:29",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: CAROLINA BEZERRA DA SILVA LISBOA. Justiça gratuita: Requerida.",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "2",
+            "04/09/2024 11:00:29",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: THOMAZ LISBOA NOBRE. Justiça gratuita: Requerida.",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "1",
+            "04/09/2024 11:00:29",
+            "Distribuído por dependência (PACFM01)\n-\nNúmero:\n5006485-78.2022.8.24.0045/SC",
+            "SC058878\nHIGOR GOMES CRUZ\nADVOGADO",
+            "INIC1\nPROC2\nSENT_OUT_PROCES3\nACORDO4\nCALC5\nCALC6\nCERTNASC7\nRG8\nfile_download\nauto_awesome_motion"
+        ]
+    ]
+}

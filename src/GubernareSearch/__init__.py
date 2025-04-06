@@ -1,2 +1,2 @@
 from src.Domain.ObjectValues.TribunalJusticaEprocUrls import TribunalJusticaEprocUrls
-from src.Domain.Entities.EprocOverviewEntity import EprocOverviewEntity
+from src.Api.Service.EprocSearch import eproc_search

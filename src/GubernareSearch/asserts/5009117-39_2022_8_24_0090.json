@@ -1,0 +1,708 @@
+{
+    "numero_processo": "5009117-39.2022.8.24.0090",
+    "status": "SUCESSO",
+    "tentativas": 1,
+    "eventos": [
+        [],
+        [
+            "115",
+            "26/03/2025 10:51:18",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (SC019710 - CAROLINA SENA VIEIRA para SC019710 - CAROLINA SENA VIEIRA)",
+            "SC019710\nCAROLINA SENA VIEIRA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "114",
+            "12/03/2025 17:33:24",
+            "Pedido de juntada de comprovante de pagamento",
+            "SC067337\nISABELA CRISTINA SABO\nADVOGADO-TITULAR",
+            "PED JT COMP PAGTO1\nCOMP2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "113",
+            "26/02/2025 18:55:55",
+            "Processo Suspenso ou Sobrestado por decisão judicial\n- Parcelamento do Débito",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "112",
+            "20/02/2025 10:15:48",
+            "Pedido de juntada de comprovante de pagamento",
+            "SC067337\nISABELA CRISTINA SABO\nADVOGADO-TITULAR",
+            "PED JT COMP PAGTO1\nCOMP2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "111",
+            "17/02/2025 17:13:04",
+            "Decisão interlocutória de Mérito",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "TERMOAUD1"
+        ],
+        [
+            "110",
+            "17/02/2025 16:34:27",
+            "Audiência de conciliação\n- realizada com conciliação - Juiz(a) - Local Sala de audiências da 1ª Vara da Família - 17/02/2025 16:00. Refer. Evento 98",
+            "a.beatriz\nANA BEATRIZ ROSA SILVA\nESTAGIÁRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "VIDEO1"
+        ],
+        [
+            "109",
+            "11/02/2025 14:52:00",
+            "SUBSTABELECIMENTO COM RESERVA\n- (SC020600 - CAETANO DIAS CORREA para SC067337 - ISABELA CRISTINA SABO)",
+            "SC020600\nCAETANO DIAS CORREA\nADVOGADO-TITULAR",
+            "Evento não gerou documento"
+        ],
+        [
+            "108",
+            "04/02/2025 01:06:55",
+            "Decorrido prazo\n- Refer. aos Eventos: 100, 101 e 102",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "107",
+            "20/01/2025 09:41:08",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (BA031071 - CLARINDO EPAMINONDAS DE SA NETO para SC073773 - CLARINDO EPAMINONDAS DE SA NETO)",
+            "BA031071\nCLARINDO EPAMINONDAS DE SA NETO\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "106",
+            "12/12/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 100, 101 e 102",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "105",
+            "02/12/2024 17:54:05",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 103\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "104",
+            "02/12/2024 17:53:12",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 103\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "103",
+            "02/12/2024 14:52:45",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 99\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n105 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 03/12/2024 00:00:00\nData final: 12/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "102",
+            "02/12/2024 14:52:41",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 99\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n108 - Decorrido prazo\n)\nData inicial da contagem do prazo: 13/12/2024 00:00:00\nData final: 03/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "101",
+            "02/12/2024 14:52:37",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 99\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n108 - Decorrido prazo\n)\nData inicial da contagem do prazo: 13/12/2024 00:00:00\nData final: 03/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "100",
+            "02/12/2024 14:52:33",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 99\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n108 - Decorrido prazo\n)\nData inicial da contagem do prazo: 13/12/2024 00:00:00\nData final: 03/02/2025 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "99",
+            "02/12/2024 14:52:30",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "98",
+            "02/12/2024 11:36:54",
+            "Audiência de conciliação\n- designada - Local Sala de audiências da 1ª Vara da Família - 17/02/2025 16:00",
+            "CMO\nCAMILE MELLO DE OLIVEIRA\nESTAGIÁRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "97",
+            "04/11/2024 13:10:06",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "96",
+            "01/11/2024 20:28:41",
+            "PETIÇÃO\n- Refer. ao Evento: 93\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "95",
+            "02/10/2024 15:12:59",
+            "Juntada de certidão\n- suspensão do prazo - Motivo: FERIADO NACIONAL em 28/10/2024",
+            "raimundo\nRODRIGO VALCELI RAIMUNDO\nADMINISTRADOR DO SISTEMA",
+            "Evento não gerou documento"
+        ],
+        [
+            "94",
+            "20/09/2024 18:55:57",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 93\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "93",
+            "10/09/2024 18:33:43",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 92\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n96 - PETIÇÃO\n)\nData inicial da contagem do prazo: 23/09/2024 00:00:00\nData final: 04/11/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "92",
+            "10/09/2024 18:33:41",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "91",
+            "30/07/2024 14:21:46",
+            "Conclusos para decisão",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "90",
+            "09/07/2024 14:21:18",
+            "PETIÇÃO\n- Refer. ao Evento: 87\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)",
+            "SC019710\nCAROLINA SENA VIEIRA\nADVOGADO-TITULAR",
+            "PET1\nDOCUMENTACAO2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "89",
+            "21/06/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 87\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "88",
+            "17/06/2024 11:45:21",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (SC008937 - CARLOS ARAUJO LEONETTI para SC019710 - CAROLINA SENA VIEIRA)",
+            "SC008937\nCARLOS ARAUJO LEONETTI\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "87",
+            "11/06/2024 19:00:39",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 86\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n90 - PETIÇÃO\n)\nData inicial da contagem do prazo: 24/06/2024 00:00:00\nData final: 12/07/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "86",
+            "11/06/2024 19:00:37",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "85",
+            "06/06/2024 10:24:46",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "84",
+            "05/06/2024 22:05:45",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (SC020600 - CAETANO DIAS CORREA para SC020600 - CAETANO DIAS CORREA)",
+            "SC020600\nCAETANO DIAS CORREA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "83",
+            "05/06/2024 20:51:36",
+            "PETIÇÃO\n- Refer. ao Evento: 80\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "82",
+            "25/04/2024 11:11:00",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 80\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "81",
+            "23/04/2024 11:21:31",
+            "PETIÇÃO",
+            "SC019710\nCAROLINA SENA VIEIRA\nADVOGADO-TITULAR",
+            "PROC1\nPET2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "80",
+            "15/04/2024 10:57:47",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 79\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n83 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/04/2024 00:00:00\nData final: 10/06/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "79",
+            "15/04/2024 10:57:47",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "78",
+            "12/03/2024 11:08:43",
+            "PETIÇÃO\n- Refer. aos Eventos: 75 e 74",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "77",
+            "12/03/2024 11:08:43",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 74\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "76",
+            "12/03/2024 11:08:43",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 75\n(\nEXEQUENTE\n-  ELISA VIEIRA)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "75",
+            "11/03/2024 12:50:28",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 73\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n78 - PETIÇÃO\n)\nData inicial da contagem do prazo: 13/03/2024 00:00:00\nData final: 04/04/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "74",
+            "11/03/2024 12:50:28",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 73\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n78 - PETIÇÃO\n)\nData inicial da contagem do prazo: 13/03/2024 00:00:00\nData final: 04/04/2024 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "73",
+            "11/03/2024 12:50:27",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "72",
+            "08/03/2024 15:19:36",
+            "Atos da Contadoria-Cálculo Judicial\n- DCJE -> FNSE01FM",
+            "argrah\nALAN RICARDO GRAH\nCONTADORIA\nDivisão de Contadoria Judicial Estadual",
+            "Evento não gerou documento"
+        ],
+        [
+            "71",
+            "08/03/2024 15:19:36",
+            "Juntada\n- Cálculo processual nº 113471 - versão 2",
+            "argrah\nALAN RICARDO GRAH\nCONTADORIA\nDivisão de Contadoria Judicial Estadual",
+            "CALC SINTETICO1"
+        ],
+        [
+            "70",
+            "08/03/2024 12:23:29",
+            "Remetidos os autos à Contadoria (Cálculo\n- alimentos) - FNSE01FM -> DCJE",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "69",
+            "06/03/2024 13:53:27",
+            "Atos da Contadoria-Informação/Parecer\n- DCJE -> FNSE01FM",
+            "acpjunior\nADERBAL CARLIN DO PRADO JUNIOR\nCONTADORIA\nDivisão de Contadoria Judicial Estadual",
+            "INF1"
+        ],
+        [
+            "68",
+            "06/03/2024 11:32:09",
+            "Remetidos os Autos à Contadoria (Cálculo)\n- FNSE01FM -> DCJE",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "67",
+            "05/03/2024 18:21:46",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "66",
+            "14/02/2024 16:43:20",
+            "Conclusos para despacho",
+            "ivoigt\nIRINEU VOIGT JUNIOR\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "65",
+            "09/02/2024 16:52:08",
+            "PETIÇÃO\n- Refer. ao Evento: 63\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "64",
+            "11/12/2023 13:26:51",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 63\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "63",
+            "01/12/2023 13:11:41",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 62\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 30 dias Status:FECHADO\n(\n65 - PETIÇÃO\n)\nData inicial da contagem do prazo: 12/12/2023 00:00:00\nData final: 26/02/2024 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "62",
+            "01/12/2023 13:11:39",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "61",
+            "04/09/2023 15:13:35",
+            "Conclusos para decisão",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "60",
+            "28/08/2023 20:00:36",
+            "PETIÇÃO\n- Refer. aos Eventos: 58 e 57",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "59",
+            "07/08/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 57 e 58",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "58",
+            "28/07/2023 12:21:38",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 56\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n60 - PETIÇÃO\n)\nData inicial da contagem do prazo: 08/08/2023 00:00:00\nData final: 28/08/2023 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "57",
+            "28/07/2023 12:21:38",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 56\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n60 - PETIÇÃO\n)\nData inicial da contagem do prazo: 08/08/2023 00:00:00\nData final: 28/08/2023 23:59:59",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "56",
+            "28/07/2023 12:21:37",
+            "Ato ordinatório praticado",
+            "cbossardi\nCAROLINA ALLES DE BOSSARDI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "55",
+            "18/07/2023 01:11:46",
+            "Decorrido prazo\n- Refer. aos Eventos: 52 e 53",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "54",
+            "24/06/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 52 e 53",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "53",
+            "14/06/2023 18:39:46",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 47\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n55 - Decorrido prazo\n)\nData inicial da contagem do prazo: 27/06/2023 00:00:00\nData final: 17/07/2023 23:59:59",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "52",
+            "14/06/2023 18:39:46",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 47\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n55 - Decorrido prazo\n)\nData inicial da contagem do prazo: 27/06/2023 00:00:00\nData final: 17/07/2023 23:59:59",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "51",
+            "14/06/2023 18:38:36",
+            "Cancelada a movimentação processual\n-  (Evento 49 - Expedida/certificada a intimação eletrônica - 14/06/2023 18:38:07)",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "50",
+            "14/06/2023 18:38:32",
+            "Cancelada a movimentação processual\n-  (Evento 48 - Expedida/certificada a intimação eletrônica - 14/06/2023 18:38:07)",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "47",
+            "14/06/2023 18:38:07",
+            "Ato ordinatório praticado",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "46",
+            "02/06/2023 01:07:24",
+            "Decorrido prazo\n- Refer. ao Evento: 44\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "45",
+            "29/05/2023 11:52:23",
+            "PETIÇÃO",
+            "SC013829\nGEYSON JOSÉ GONÇALVES DA SILVA\nADVOGADO-TITULAR",
+            "PET1\nPROC2\nDECLPOBRE3\nRG4\nCOMP5\nCOMP6\nCOMP7\nCOMP8\nCOMP9\nCOMP10\nPLANILHA DE PAGTO.11\nPLANILHA DE CÁLCULO12\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "44",
+            "18/04/2023 11:06:19",
+            "Juntada de mandado cumprido\n- Refer. ao Evento: 40\nData do cumprimento: 18/04/2023\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)\nPrazo: 30 dias Status:FECHADO\n(\n46 - Decorrido prazo\n)\nData inicial da contagem do prazo: 19/04/2023 00:00:00\nData final: 01/06/2023 23:59:59\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES\nData de Cumprimento: 18/04/2023",
+            "roger\nROGER BERNARDO COLOSSI\nOFICIAL DE JUSTIÇA\nCentral de Mandados - Florianópolis",
+            "CERT1\nOUT2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "43",
+            "04/04/2023 01:09:24",
+            "Decorrido prazo\n- Refer. aos Eventos: 36 e 37",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "42",
+            "17/03/2023 16:20:53",
+            "Juntada de certidão\n- suspensão do prazo - Motivo: FERIADO MUNICIPAL em 23/03/2023",
+            "sirley\nSIRLEY ELISABETH CORREA\nADMINISTRADOR DO SISTEMA",
+            "Evento não gerou documento"
+        ],
+        [
+            "41",
+            "13/03/2023 18:13:56",
+            "Recebido o mandado para cumprimento pelo oficial de justiça\n- Refer. ao Evento: 40\nOficial: ROGER BERNARDO COLOSSI\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES",
+            "mrss5462\nMARCIA REGINA SILVEIRA DOS SANTOS\nSERVIDOR CENTRAL DE MANDADOS\nCentral de Mandados - Florianópolis",
+            "Evento não gerou documento"
+        ],
+        [
+            "40",
+            "13/03/2023 18:13:38",
+            "Expedição de mandado\n- FNSCLCEMAN - Devolvido - Cumprido - Evento: 44\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES (Prazo: 30 dias - Juntada)\nNúmero do mandado: 310040281097",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "MAND1"
+        ],
+        [
+            "39",
+            "10/03/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 36 e 37",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "38",
+            "02/03/2023 01:17:56",
+            "Decorrido prazo\n- Refer. aos Eventos: 29 e 30",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "37",
+            "28/02/2023 18:09:06",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 35\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n43 - Decorrido prazo\n)\nData inicial da contagem do prazo: 13/03/2023 00:00:00\nData final: 03/04/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "36",
+            "28/02/2023 18:09:06",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 35\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n43 - Decorrido prazo\n)\nData inicial da contagem do prazo: 13/03/2023 00:00:00\nData final: 03/04/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "35",
+            "28/02/2023 18:09:06",
+            "Decisão interlocutória",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "34",
+            "28/02/2023 17:12:08",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: ELISA VIEIRA. Justiça gratuita: Deferida.",
+            "fabio.doro\nFABIO HENRIQUE DORO\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "33",
+            "28/02/2023 17:12:07",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: ANA JULIA VIEIRA DOS PRAZERES. Justiça gratuita: Deferida.",
+            "fabio.doro\nFABIO HENRIQUE DORO\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "32",
+            "28/02/2023 17:09:49",
+            "Conclusos para decisão",
+            "fabio.doro\nFABIO HENRIQUE DORO\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "31",
+            "06/02/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 29 e 30",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "30",
+            "27/01/2023 18:41:33",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 28\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n38 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/02/2023 00:00:00\nData final: 01/03/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "29",
+            "27/01/2023 18:41:33",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 28\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 15 dias Status:FECHADO\n(\n38 - Decorrido prazo\n)\nData inicial da contagem do prazo: 07/02/2023 00:00:00\nData final: 01/03/2023 23:59:59",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "28",
+            "27/01/2023 18:41:33",
+            "Despacho",
+            "rm17953\nRENATO MASTELLA\nMAGISTRADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "DESPADEC1"
+        ],
+        [
+            "27",
+            "14/11/2022 17:41:19",
+            "Conclusos para despacho",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "26",
+            "05/09/2022 23:12:05",
+            "PETIÇÃO\n- Refer. aos Eventos: 24 e 23",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "25",
+            "29/08/2022 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 23 e 24",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "24",
+            "19/08/2022 11:16:11",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 22\n(\nEXEQUENTE\n-  ELISA VIEIRA)\nPrazo: 5 dias Status:FECHADO\n(\n26 - PETIÇÃO\n)\nData inicial da contagem do prazo: 30/08/2022 00:00:00\nData final: 05/09/2022 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "23",
+            "19/08/2022 11:16:11",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 22\n(\nEXEQUENTE\n-  ANA JULIA VIEIRA DOS PRAZERES)\nPrazo: 5 dias Status:FECHADO\n(\n26 - PETIÇÃO\n)\nData inicial da contagem do prazo: 30/08/2022 00:00:00\nData final: 05/09/2022 23:59:59",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "Evento não gerou documento"
+        ],
+        [
+            "22",
+            "19/08/2022 11:16:11",
+            "Ato ordinatório praticado",
+            "eduardo.amaral\nEDUARDO HENRIQUE AMARAL\nCHEFE DE CARTÓRIO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "ATOORD1"
+        ],
+        [
+            "21",
+            "17/08/2022 14:21:07",
+            "Juntada de Carta pelo Correio\n- devolvida sem cumprimento - Refer. ao Evento: 18\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES\nDevolvida em: 17/08/2022\nMotivo devolução: Não Procurado",
+            "CORREIOS\nSISTEMA VPOST - Correios\nSISTEMA EPROC",
+            "AR1"
+        ],
+        [
+            "20",
+            "09/08/2022 20:01:45",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (SC062191 - ALINE MIRIAN DA SILVEIRA para SC059880 - VICTOR BROERING DA SILVA)",
+            "SC062191\nALINE MIRIAN DA SILVEIRA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "19",
+            "09/08/2022 20:01:45",
+            "SUBSTABELECIMENTO SEM RESERVA\n- (SC062191 - ALINE MIRIAN DA SILVEIRA para SC059880 - VICTOR BROERING DA SILVA)",
+            "SC062191\nALINE MIRIAN DA SILVEIRA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "18",
+            "15/06/2022 18:43:11",
+            "Expedição de ofício\n- 1 carta (Devolvida pelos Correios)\nWILLIAN FRANCISCO DOS PRAZERES (Prazo: 30 dias) - 1 carta - Devolução no Evento: 21",
+            "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
+            "OFIC1"
+        ],
+        [
+            "17",
+            "04/05/2022 16:21:59",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. aos Eventos: 9, 8 e 13",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "16",
+            "04/05/2022 16:21:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 13",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "15",
+            "04/05/2022 16:21:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 8",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "14",
+            "04/05/2022 16:21:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 9",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ]
+    ]
+}

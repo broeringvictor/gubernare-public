@@ -1,0 +1,470 @@
+{
+    "numero_processo": "5011739-66.2021.8.24.0045",
+    "status": "SUCESSO",
+    "tentativas": 1,
+    "eventos": [
+        [],
+        [
+            "66",
+            "04/04/2025 20:02:23",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 65\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "65",
+            "25/03/2025 19:57:52",
+            "Expedida/certificada a intimação eletrônica\n- Vista ao MP para Parecer\nRefer.  ao Evento 64\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:ABERTO\nData inicial da contagem do prazo: 07/04/2025 00:00:00\nData final: 02/05/2025 23:59:59\nDomicílio Judicial Eletrônico: Enviado em 25/03/2025 20:01:01",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "64",
+            "25/03/2025 19:57:51",
+            "Ato ordinatório praticado",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "63",
+            "13/03/2025 01:09:16",
+            "Decorrido prazo\n- Refer. aos Eventos: 59 e 60",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "62",
+            "15/02/2025 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 59 e 60",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "61",
+            "06/02/2025 01:06:23",
+            "Decorrido prazo\n- Refer. aos Eventos: 51 e 52",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "60",
+            "05/02/2025 16:47:33",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 58\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)\nPrazo: 15 dias Status:FECHADO\n(\n63 - Decorrido prazo\n)\nData inicial da contagem do prazo: 18/02/2025 00:00:00\nData final: 12/03/2025 23:59:59",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "59",
+            "05/02/2025 16:47:33",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 58\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n63 - Decorrido prazo\n)\nData inicial da contagem do prazo: 18/02/2025 00:00:00\nData final: 12/03/2025 23:59:59",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "58",
+            "05/02/2025 16:45:54",
+            "Juntada de peças digitalizadas",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "CON_EXT_SISBA1\nCON_EXT_SISBA2\nCON_EXT_SISBA3\nCON_EXT_SISBA4\nCON_EXT_SISBA5\nCON_EXT_SISBA6\nCON_EXT_SISBA7\nCON_EXT_SISBA8\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "57",
+            "14/12/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 51 e 52",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "56",
+            "11/12/2024 18:12:06",
+            "Juntada de peças digitalizadas",
+            "M58358\nMARCELO ZAMIN\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "PROTOCOLO ORDEM1"
+        ],
+        [
+            "55",
+            "04/12/2024 13:22:22",
+            "CIÊNCIA, COM RENÚNCIA AO PRAZO\n- Refer. ao Evento: 53\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "54",
+            "04/12/2024 13:21:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 53\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "53",
+            "04/12/2024 10:19:12",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 50\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n55 - CIÊNCIA, COM RENÚNCIA AO PRAZO\n)\nData inicial da contagem do prazo: 05/12/2024 00:00:00\nData final: 24/01/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "52",
+            "04/12/2024 10:19:12",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 50\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)\nPrazo: 15 dias Status:FECHADO\n(\n61 - Decorrido prazo\n)\nData inicial da contagem do prazo: 17/12/2024 00:00:00\nData final: 05/02/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "51",
+            "04/12/2024 10:19:11",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 50\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n61 - Decorrido prazo\n)\nData inicial da contagem do prazo: 17/12/2024 00:00:00\nData final: 05/02/2025 23:59:59",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "50",
+            "04/12/2024 10:19:11",
+            "Decisão interlocutória de Mérito",
+            "sandropierri\nSANDRO PIERRI\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "49",
+            "17/09/2024 21:21:25",
+            "Conclusos para decisão",
+            "secautoloc\nAUTOMATIZAÇÃO DE LOCALIZADORES\nSISTEMA EPROC",
+            "Evento não gerou documento"
+        ],
+        [
+            "48",
+            "17/09/2024 21:21:25",
+            "PETIÇÃO\n- Refer. ao Evento: 46\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "47",
+            "17/09/2024 21:20:36",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 46\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "46",
+            "09/09/2024 15:02:13",
+            "Expedida/certificada a intimação eletrônica\n- Vista ao MP para Parecer\nRefer.  ao Evento 45\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n48 - PETIÇÃO\n)\nData inicial da contagem do prazo: 18/09/2024 00:00:00\nData final: 08/10/2024 23:59:59",
+            "rnotaro\nRYAN ROGERIO DE ALMEIDA NOTARO\nESTAGIÁRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "45",
+            "09/09/2024 15:02:13",
+            "Ato ordinatório praticado",
+            "rnotaro\nRYAN ROGERIO DE ALMEIDA NOTARO\nESTAGIÁRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "44",
+            "03/08/2024 01:09:20",
+            "Decorrido prazo\n- Refer. aos Eventos: 41 e 42",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "43",
+            "12/07/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 41 e 42",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "42",
+            "02/07/2024 18:54:44",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 40\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)\nPrazo: 15 dias Status:FECHADO\n(\n44 - Decorrido prazo\n)\nData inicial da contagem do prazo: 15/07/2024 00:00:00\nData final: 02/08/2024 23:59:59",
+            "JULIA.SHIMOSATO\nJULIA NAOMI SHIMOSATO\nESTAGIÁRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "41",
+            "02/07/2024 18:54:44",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 40\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n44 - Decorrido prazo\n)\nData inicial da contagem do prazo: 15/07/2024 00:00:00\nData final: 02/08/2024 23:59:59",
+            "JULIA.SHIMOSATO\nJULIA NAOMI SHIMOSATO\nESTAGIÁRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "40",
+            "13/06/2024 14:24:52",
+            "Juntada de Carta pelo Correio\n- devolvida sem cumprimento - Refer. ao Evento: 38\nDestinatário: 3G ALUMINIO LTDA\nDevolvida em: 18/05/2024\nMotivo devolução: Mudou-se",
+            "CORREIOS\nSISTEMA VPOST - Correios\nSISTEMA EPROC",
+            "AR1"
+        ],
+        [
+            "39",
+            "09/05/2024 17:11:42",
+            "Juntada de certidão\n- traslado de peças para o processo  -\n5000732-72.2024.8.24.0045/SC\n- ref. ao(s) evento(s): 38",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "38",
+            "09/05/2024 17:11:10",
+            "Expedição de ofício\n- 1 carta (Devolvida pelos Correios)\n3G ALUMINIO LTDA - 1 carta - Devolução no Evento: 40",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "OFIC1"
+        ],
+        [
+            "37",
+            "09/05/2024 16:15:22",
+            "Juntada de certidão\n- traslado de peças do processo  -\n5000732-72.2024.8.24.0045/SC\n- ref. ao(s) evento(s): 13",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "EMAIL1\nDOCUMENTACAO2\nDOCUMENTACAO3\nDOCUMENTACAO4\nDOCUMENTACAO5\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "36",
+            "11/03/2024 14:34:45",
+            "PETIÇÃO\n- Refer. aos Eventos: 33 e 34",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "35",
+            "18/02/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 33 e 34",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "34",
+            "08/02/2024 12:27:12",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 28\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)\nPrazo: 15 dias Status:FECHADO\n(\n36 - PETIÇÃO\n)\nData inicial da contagem do prazo: 20/02/2024 00:00:00\nData final: 11/03/2024 23:59:59",
+            "GISELECARDOSO\nGISELE CARDOSO\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "33",
+            "08/02/2024 12:27:11",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 28\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n36 - PETIÇÃO\n)\nData inicial da contagem do prazo: 20/02/2024 00:00:00\nData final: 11/03/2024 23:59:59",
+            "GISELECARDOSO\nGISELE CARDOSO\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "32",
+            "08/11/2023 01:08:11",
+            "Decorrido prazo\n- Refer. ao Evento: 30\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "31",
+            "15/10/2023 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 30\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "30",
+            "02/10/2023 18:38:57",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 28\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n32 - Decorrido prazo\n)\nData inicial da contagem do prazo: 17/10/2023 00:00:00\nData final: 07/11/2023 23:59:59",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "29",
+            "29/06/2023 13:09:16",
+            "Juntada de Carta pelo Correio\n- Comprovante de entrega - Refer. ao Evento: 27\nDestinatário: VIGILANCIA TRIANGULO LTDA\nEntregue em: 26/06/2023",
+            "CORREIOS\nSISTEMA VPOST - Correios\nSISTEMA EPROC",
+            "AR1"
+        ],
+        [
+            "28",
+            "26/06/2023 15:43:08",
+            "Juntado(a)",
+            "cleiapk\nCLÉIA PEREIRA KIELING\nESTAGIÁRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DOCUMENTACAO1\nDOCUMENTACAO2\nDOCUMENTACAO3\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "27",
+            "19/06/2023 19:21:41",
+            "Expedição de ofício\n- 1 carta (Devolvida pelos Correios)\nVIGILANCIA TRIANGULO LTDA - 1 carta - Devolução no Evento: 29",
+            "GISELECARDOSO\nGISELE CARDOSO\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "OFIC1"
+        ],
+        [
+            "26",
+            "15/03/2023 16:35:38",
+            "Despacho",
+            "lfcanever\nLUIS FELIPE CANEVER\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "25",
+            "21/11/2022 14:01:19",
+            "Classe Processual alterada\n- DE: ALIMENTOS - LEI ESPECIAL Nº 5.478/68 PARA: Reconhecimento e Extinção de União Estável",
+            "JUMARA\nJUMARA MARTINI\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "24",
+            "16/11/2022 12:59:58",
+            "Conclusos para despacho",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "23",
+            "21/07/2022 17:19:40",
+            "PETIÇÃO\n- Refer. ao Evento: 21\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "PROMOÇÃO1"
+        ],
+        [
+            "22",
+            "21/07/2022 17:18:33",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 21\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)",
+            "MP/SC",
+            "Evento não gerou documento"
+        ],
+        [
+            "21",
+            "20/07/2022 12:20:52",
+            "Expedida/certificada a intimação eletrônica\n- Vista ao MP para Parecer\nRefer.  ao Evento 20\n(\nMP\n-  MINISTÉRIO PÚBLICO DO ESTADO DE SANTA CATARINA)\nPrazo: 15 dias Status:FECHADO\n(\n23 - PETIÇÃO\n)\nData inicial da contagem do prazo: 22/07/2022 00:00:00\nData final: 11/08/2022 23:59:59",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "20",
+            "20/07/2022 12:20:52",
+            "Ato ordinatório praticado",
+            "elisangela.bastos\nELISANGELA DE ALMEIDA BASTOS\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "ATOORD1"
+        ],
+        [
+            "19",
+            "31/05/2022 10:38:38",
+            "PETIÇÃO",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "18",
+            "08/10/2021 01:11:46",
+            "Decorrido prazo\n- Refer. ao Evento: 17\n(\nREQUERIDO\n-  DIEGO DA SILVA MOTTA)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
+            "17",
+            "16/09/2021 16:21:00",
+            "Juntada de mandado cumprido\n- Refer. ao Evento: 15\nData do cumprimento: 16/09/2021\n(\nREQUERIDO\n-  DIEGO DA SILVA MOTTA)\nPrazo: 15 dias Status:FECHADO\n(\n18 - Decorrido prazo\n)\nData inicial da contagem do prazo: 17/09/2021 00:00:00\nData final: 07/10/2021 23:59:59\nDestinatário: DIEGO DA SILVA MOTTA\nData de Cumprimento: 16/09/2021",
+            "tls26460\nTHAIS LOPES DA SILVA\nOFICIAL DE JUSTIÇA\nCentral de Mandados - Florianópolis",
+            "CERT1\nANEXO2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "16",
+            "15/09/2021 12:19:53",
+            "Recebido o mandado para cumprimento pelo oficial de justiça\n- Refer. ao Evento: 15\nOficial: THAIS LOPES DA SILVA\nCarregando dados do mandado ...",
+            "dcb22367\nDAIANE CRISTINA BERTOGLIO\nSERVIDOR CENTRAL DE MANDADOS\nCentral de Mandados - Florianópolis",
+            "Evento não gerou documento"
+        ],
+        [
+            "15",
+            "15/09/2021 12:11:05",
+            "Expedição de mandado\n- Prioridade - FNSCLCEMAN - Devolvido - Cumprido - Evento: 17\nCarregando dados do mandado ...",
+            "helenathc\nHELENA TENTER HEUSI CARNEIRO\nCHEFE DE CARTÓRIO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "MAND1"
+        ],
+        [
+            "14",
+            "08/09/2021 13:51:46",
+            "Juntada de Carta pelo Correio\n- Comprovante de entrega - Refer. ao Evento: 13\nDestinatário: VIGILÂNCIA TRIÂNGULO LTDA\nEntregue em: 02/09/2021",
+            "CORREIOS\nSISTEMA VPOST - Correios\nSISTEMA EPROC",
+            "AR1"
+        ],
+        [
+            "13",
+            "27/08/2021 15:10:26",
+            "Expedição de ofício\n- 1 carta (Devolvida pelos Correios)\nVIGILÂNCIA TRIÂNGULO LTDA - 1 carta - Devolução no Evento: 14",
+            "lfcanever\nLUIS FELIPE CANEVER\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "OFIC1"
+        ],
+        [
+            "12",
+            "27/08/2021 14:26:53",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: MARIANA TERRA DA SILVA. Justiça gratuita: Deferida.",
+            "bkelss\nBEATRIZ KELSS GOTTFRIED\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "11",
+            "27/08/2021 14:26:53",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: ANDREZA TERRA OLIVEIRA. Justiça gratuita: Deferida.",
+            "bkelss\nBEATRIZ KELSS GOTTFRIED\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "10",
+            "25/08/2021 17:55:17",
+            "PETIÇÃO\n- Refer. aos Eventos: 7 e 6",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "9",
+            "23/08/2021 11:56:07",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 6\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "8",
+            "23/08/2021 11:55:53",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 7\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "7",
+            "20/08/2021 15:36:48",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 5\n(\nREQUERENTE\n-  MARIANA TERRA DA SILVA)\nPrazo: 15 dias Status:FECHADO\n(\n10 - PETIÇÃO\n)\nData inicial da contagem do prazo: 24/08/2021 00:00:00\nData final: 14/09/2021 23:59:59",
+            "lfcanever\nLUIS FELIPE CANEVER\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "6",
+            "20/08/2021 15:36:48",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 5\n(\nREQUERENTE\n-  ANDREZA TERRA OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n10 - PETIÇÃO\n)\nData inicial da contagem do prazo: 24/08/2021 00:00:00\nData final: 14/09/2021 23:59:59",
+            "lfcanever\nLUIS FELIPE CANEVER\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "5",
+            "20/08/2021 15:36:48",
+            "Concedida a tutela provisória",
+            "lfcanever\nLUIS FELIPE CANEVER\nMAGISTRADO\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "DESPADEC1"
+        ],
+        [
+            "4",
+            "16/08/2021 15:21:46",
+            "Conclusos para decisão/despacho",
+            "bkelss\nBEATRIZ KELSS GOTTFRIED\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
+            "Evento não gerou documento"
+        ],
+        [
+            "3",
+            "12/08/2021 13:47:09",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: ANDREZA TERRA OLIVEIRA. Justiça gratuita: Requerida.",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "2",
+            "12/08/2021 13:47:09",
+            "Expedida/certificada a comunicação eletrônica\n- Parte: MARIANA TERRA DA SILVA. Justiça gratuita: Não requerida.",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "1",
+            "12/08/2021 13:47:09",
+            "Distribuído por sorteio (PACFM01)",
+            "SC059880\nVICTOR BROERING DA SILVA\nADVOGADO",
+            "INIC1\nPROC2\nAPRES DOC3\nCERTNASC4\nRG5\nEND6\nEND7\nDECLPOBRE8\nDECLPOBRE9\nDECLPOBRE10\nDECLPOBRE11\nDOCUMENTACAO12\nDOCUMENTACAO13\nfile_download\nauto_awesome_motion"
+        ]
+    ]
+}

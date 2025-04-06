@@ -1,0 +1,708 @@
+{
+    "numero_processo": "0300483-78.2016.8.24.0057",
+    "status": "SUCESSO",
+    "tentativas": 1,
+    "eventos": [
+        [],
+        [
+            "234",
+            "26/02/2025 14:45:00",
+            "PROCURAÇÃO\n- ADELIR HILLESHEIM MEYER / ELZA SOMMER MEYER / ARLINDO PEREIRA MACHADO / JOSE FIDENCIO KUHNEN / EDITE SCHLEMPER MEYER (SC035539 - ANDRE TONY MARTINS SOARES)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "PROC1"
+        ],
+        [
+            "233",
+            "10/01/2025 18:27:19",
+            "Conclusos para decisão",
+            "juliavolpato\nJULIA DA LUZ VOLPATO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "232",
+            "09/12/2024 13:11:20",
+            "PETIÇÃO\n- Refer. aos Eventos: 216, 217, 214, 215, 227, 224, 225, 222, 220, 228, 221, 226, 218, 219, 223, 230 e 229",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "PET1\nCERTNEG2\nCERTNEG3\nDOCUMENTACAO4\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "231",
+            "24/11/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229 e 230",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "230",
+            "14/11/2024 19:16:53",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  TEREZINHA MEYER MACHADO)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "229",
+            "14/11/2024 19:16:53",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "228",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  PEDRO PAULO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "227",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  MAURA SCHLEMPER MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "226",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  LUIZ CARLOS MEYER BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "225",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  JOSE MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "224",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  JOAO ALESIO MEIYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "223",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  FRANCISCO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "222",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  FRANCISCA ISABEL DE OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "221",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  FABIO LUIZ BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "220",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  EVALDO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "219",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  EDUARDO JOSE SANT ANA)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "218",
+            "14/11/2024 19:16:52",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  EDSON JOSE SANTANA)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "217",
+            "14/11/2024 19:16:51",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  EDEZIO SANT ANA)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "216",
+            "14/11/2024 19:16:51",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  CECILIA MEYER KUHNEN)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "215",
+            "14/11/2024 19:16:51",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  ANTONIO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "214",
+            "14/11/2024 19:16:51",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 213\n(\nHERDEIRO\n-  ANA PAULA MEYER BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n232 - PETIÇÃO\n)\nData inicial da contagem do prazo: 26/11/2024 00:00:00\nData final: 16/12/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "213",
+            "14/11/2024 19:16:51",
+            "Decisão interlocutória",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "DESPADEC1"
+        ],
+        [
+            "212",
+            "04/11/2024 13:57:39",
+            "Conclusos para decisão",
+            "camila.silva\nCAMILA SANTOS SILVA\nCHEFE DE CARTÓRIO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "211",
+            "20/10/2024 20:42:20",
+            "PETIÇÃO\n- Refer. aos Eventos: 195, 196, 194, 197, 208, 203, 204, 205, 202, 200, 207, 201, 206, 198, 199 e 209",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "PET1\nDOCUMENTACAO2\nDOCUMENTACAO3\nDOCUMENTACAO4\nDOCUMENTACAO5\nDOCUMENTACAO6\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "210",
+            "18/10/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208 e 209",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "209",
+            "08/10/2024 10:43:07",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  TEREZINHA MEYER MACHADO)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "208",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "207",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  PEDRO PAULO MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "206",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  LUIZ CARLOS MEYER BELTRAME)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "205",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  JOSE MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "204",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  JOAO ALESIO MEIYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "203",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  FRANCISCO MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "202",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  FRANCISCA ISABEL DE OLIVEIRA)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "201",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  FABIO LUIZ BELTRAME)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "200",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  EVALDO MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "199",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  EDUARDO JOSE SANT ANA)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "198",
+            "08/10/2024 10:43:06",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  EDSON JOSE SANTANA)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "197",
+            "08/10/2024 10:43:05",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  EDEZIO SANT ANA)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "196",
+            "08/10/2024 10:43:05",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  CECILIA MEYER KUHNEN)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "195",
+            "08/10/2024 10:43:05",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  ANTONIO MEYER)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "194",
+            "08/10/2024 10:43:05",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 193\n(\nHERDEIRO\n-  ANA PAULA MEYER BELTRAME)\nPrazo: 5 dias Status:FECHADO\n(\n211 - PETIÇÃO\n)\nData inicial da contagem do prazo: 21/10/2024 00:00:00\nData final: 25/10/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "193",
+            "08/10/2024 10:43:05",
+            "Decisão interlocutória",
+            "fabiane\nFABIANE ALICE MÜLLER HEINZEN GERENT\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "DESPADEC1"
+        ],
+        [
+            "192",
+            "07/10/2024 16:51:37",
+            "Juntada de mandado cumprido\n- Refer. ao Evento: 150\nData do cumprimento: 04/10/2024\nDestinatário: RAINILDA FRITZEN MEYER\nData de Cumprimento: 04/10/2024",
+            "gleverson\nGLEVERSON CESAR PEREIRA\nOFICIAL DE JUSTIÇA\nCentral de Mandados - Santo Amaro da Imperatriz",
+            "CERT1\nOUT2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "191",
+            "01/10/2024 15:30:37",
+            "Conclusos para decisão",
+            "camila.silva\nCAMILA SANTOS SILVA\nCHEFE DE CARTÓRIO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "190",
+            "24/09/2024 14:29:24",
+            "PETIÇÃO\n- Refer. ao Evento: 171\n(\nINTERESSADO\n-  INSTITUTO DO MEIO AMBIENTE DE SANTA CATARINA)",
+            "SC010208\nMARISTELA APARECIDA SILVA\nPROCURADOR",
+            "PET1\nANEXO2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "189",
+            "14/09/2024 23:59:59",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 171\n(\nINTERESSADO\n-  INSTITUTO DO MEIO AMBIENTE DE SANTA CATARINA)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÔNICO",
+            "Evento não gerou documento"
+        ],
+        [
+            "188",
+            "11/09/2024 15:01:27",
+            "PETIÇÃO\n- Refer. aos Eventos: 164, 156, 165, 166, 163, 157, 161, 168, 155, 162, 167, 159, 160, 158, 169 e 170",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "PET1\nMATRIMÓVEL2\nfile_download\nauto_awesome_motion"
+        ],
+        [
+            "187",
+            "11/09/2024 15:01:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 170\n(\nHERDEIRO\n-  TEREZINHA MEYER MACHADO)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "186",
+            "11/09/2024 15:01:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 169\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "185",
+            "11/09/2024 15:01:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 158\n(\nHERDEIRO\n-  EDEZIO SANT ANA)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "184",
+            "11/09/2024 15:01:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 160\n(\nHERDEIRO\n-  EDUARDO JOSE SANT ANA)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "183",
+            "11/09/2024 15:01:27",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 159\n(\nHERDEIRO\n-  EDSON JOSE SANTANA)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "182",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 167\n(\nHERDEIRO\n-  LUIZ CARLOS MEYER BELTRAME)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "181",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 162\n(\nHERDEIRO\n-  FABIO LUIZ BELTRAME)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "180",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 155\n(\nHERDEIRO\n-  ANA PAULA MEYER BELTRAME)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "179",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 168\n(\nHERDEIRO\n-  PEDRO PAULO MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "178",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 161\n(\nHERDEIRO\n-  EVALDO MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "177",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 157\n(\nHERDEIRO\n-  CECILIA MEYER KUHNEN)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "176",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 163\n(\nHERDEIRO\n-  FRANCISCA ISABEL DE OLIVEIRA)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "175",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 166\n(\nHERDEIRO\n-  JOSE MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "174",
+            "11/09/2024 15:01:26",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 165\n(\nHERDEIRO\n-  JOAO ALESIO MEIYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "173",
+            "11/09/2024 15:01:25",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 156\n(\nHERDEIRO\n-  ANTONIO MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "172",
+            "11/09/2024 15:01:25",
+            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 164\n(\nHERDEIRO\n-  FRANCISCO MEYER)",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "Evento não gerou documento"
+        ],
+        [
+            "171",
+            "04/09/2024 13:25:34",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 154\n(\nINTERESSADO\n-  INSTITUTO DO MEIO AMBIENTE DE SANTA CATARINA)\nPrazo: 10 dias Status:FECHADO\n(\n190 - PETIÇÃO\n)\nData inicial da contagem do prazo: 17/09/2024 00:00:00\nData final: 30/09/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "170",
+            "04/09/2024 13:25:34",
+            "Expedida/certificada a intimação eletrônica\n- Despacho/Decisão\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  TEREZINHA MEYER MACHADO)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÇÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1ª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento não gerou documento"
+        ],
+        [
+            "169",
+            "04/09/2024 13:25:34",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "168",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  PEDRO PAULO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "167",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  LUIZ CARLOS MEYER BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "166",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  JOSE MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "165",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  JOAO ALESIO MEIYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "164",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  FRANCISCO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "163",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  FRANCISCA ISABEL DE OLIVEIRA)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "162",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  FABIO LUIZ BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "161",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  EVALDO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "160",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  EDUARDO JOSE SANT ANA)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "159",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  EDSON JOSE SANTANA)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "158",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  EDEZIO SANT ANA)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "157",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  CECILIA MEYER KUHNEN)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "156",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  ANTONIO MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "155",
+            "04/09/2024 13:25:33",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 154\n(\nHERDEIRO\n-  ANA PAULA MEYER BELTRAME)\nPrazo: 15 dias Status:FECHADO\n(\n188 - PETIÃÃO\n)\nData inicial da contagem do prazo: 12/09/2024 00:00:00\nData final: 02/10/2024 23:59:59",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "154",
+            "04/09/2024 13:25:32",
+            "DecisÃ£o interlocutÃ³ria",
+            "cristinalunardi\nCRISTINA LERCH LUNARDI\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "DESPADEC1"
+        ],
+        [
+            "153",
+            "05/08/2024 16:35:18",
+            "Conclusos para decisÃ£o",
+            "camila.silva\nCAMILA SANTOS SILVA\nCHEFE DE CARTÃRIO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "152",
+            "16/07/2024 18:07:42",
+            "Recebido o mandado para cumprimento pelo oficial de justiÃ§a\n- Refer. ao Evento: 150\nOficial: GLEVERSON CESAR PEREIRA  (por substituiÃ§Ã£o em 17/07/2024 11:59:20)\nDestinatÃ¡rio: RAINILDA FRITZEN MEYER",
+            "andreiak\nANDREIA KOCHELLA\nSERVIDOR CENTRAL DE MANDADOS\nCentral de Mandados - Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "151",
+            "16/07/2024 17:50:19",
+            "PETIÃÃO",
+            "SC035539\nANDRE TONY MARTINS SOARES\nADVOGADO",
+            "PET1"
+        ],
+        [
+            "150",
+            "16/07/2024 17:30:11",
+            "ExpediÃ§Ã£o de mandado\n- SIZCEMAN - Devolvido - Cumprido - Evento: 192\nDestinatÃ¡rio: RAINILDA FRITZEN MEYER\nNÃºmero do mandado: 310062277526",
+            "npb1836\nNILZETE PASSIG BROERING\nCHEFE DE CARTÃRIO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "MAND1"
+        ],
+        [
+            "149",
+            "13/07/2024 01:04:37",
+            "Decorrido prazo\n- Refer. ao Evento: 147\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "148",
+            "20/06/2024 23:59:59",
+            "Confirmada a intimaÃ§Ã£o eletrÃ´nica\n- Refer. ao Evento: 147\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)",
+            "SECJE\nSISTEMA DE PROCESSO ELETRÃNICO",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "147",
+            "10/06/2024 18:44:03",
+            "Expedida/certificada a intimaÃ§Ã£o eletrÃ´nica\n- Despacho/DecisÃ£o\nRefer.  ao Evento 146\n(\nREQUERENTE\n-  RAINILDA FRITZEN MEYER)\nPrazo: 15 dias Status:FECHADO\n(\n149 - Decorrido prazo\n)\nData inicial da contagem do prazo: 21/06/2024 00:00:00\nData final: 12/07/2024 23:59:59",
+            "fabiane\nFABIANE ALICE MÃLLER HEINZEN GERENT\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "146",
+            "10/06/2024 18:44:03",
+            "Despacho",
+            "fabiane\nFABIANE ALICE MÃLLER HEINZEN GERENT\nMAGISTRADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "DESPADEC1"
+        ],
+        [
+            "145",
+            "08/05/2024 14:03:43",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: EDEZIO SANT ANA. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "144",
+            "08/05/2024 14:03:04",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: EDUARDO JOSE SANT ANA. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "143",
+            "08/05/2024 14:02:08",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: EDSON JOSE SANTANA. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "142",
+            "08/05/2024 13:58:42",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: LUIZ CARLOS MEYER BELTRAME. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "141",
+            "08/05/2024 13:57:42",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: FABIO LUIZ BELTRAME. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "140",
+            "08/05/2024 13:56:38",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: ANA PAULA MEYER BELTRAME. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "139",
+            "08/05/2024 13:54:54",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: EDITE SCHLEMPER MEYER. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "138",
+            "08/05/2024 13:53:27",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: PEDRO PAULO MEYER. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "137",
+            "08/05/2024 13:48:13",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: EVALDO MEYER. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "136",
+            "08/05/2024 13:45:21",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: JOSE FIDENCIO KUHNEN. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ],
+        [
+            "135",
+            "08/05/2024 13:44:33",
+            "Expedida/certificada a comunicaÃ§Ã£o eletrÃ´nica\n- Parte: CECILIA MEYER KUHNEN. JustiÃ§a gratuita: NÃ£o requerida.",
+            "ELIZANGELAB\nELIZANGELA BANCK\nSERVIDOR UNIDADE JUDICIAL AVANÃADO\n1Âª Vara da Comarca de Santo Amaro da Imperatriz",
+            "Evento nÃ£o gerou documento"
+        ]
+    ]
+}
