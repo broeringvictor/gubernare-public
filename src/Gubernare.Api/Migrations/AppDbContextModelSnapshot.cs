@@ -37,6 +37,34 @@ namespace Gubernare.Api.Migrations
                     b.ToTable("ContractIndividualClient");
                 });
 
+            modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.CourtLogin", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CourtSystem")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("CourtSystem");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Login");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CourtLogin", (string)null);
+                });
+
             modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -241,8 +269,63 @@ namespace Gubernare.Api.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.CourtLogin", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.AccountContext.Entities.User", "User")
+                        .WithMany("CourtLogins")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
+                        {
+                            b1.Property<Guid>("CourtLoginId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("Hash")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PasswordHash");
+
+                            b1.HasKey("CourtLoginId");
+
+                            b1.ToTable("CourtLogin");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CourtLoginId");
+                        });
+
+                    b.Navigation("Password")
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.User", b =>
                 {
+                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
+                        {
+                            b1.Property<Guid>("UserId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("Hash")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PasswordHash");
+
+                            b1.Property<string>("ResetCode")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PasswordResetCode");
+
+                            b1.HasKey("UserId");
+
+                            b1.ToTable("User");
+
+                            b1.WithOwner()
+                                .HasForeignKey("UserId");
+                        });
+
                     b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Email", "Email", b1 =>
                         {
                             b1.Property<Guid>("UserId")
@@ -288,29 +371,6 @@ namespace Gubernare.Api.Migrations
 
                             b1.Navigation("Verification")
                                 .IsRequired();
-                        });
-
-                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
-                        {
-                            b1.Property<Guid>("UserId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Hash")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("PasswordHash");
-
-                            b1.Property<string>("ResetCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("PasswordResetCode");
-
-                            b1.HasKey("UserId");
-
-                            b1.ToTable("User");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UserId");
                         });
 
                     b.Navigation("Email")
@@ -378,6 +438,11 @@ namespace Gubernare.Api.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.User", b =>
+                {
+                    b.Navigation("CourtLogins");
                 });
 #pragma warning restore 612, 618
         }

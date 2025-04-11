@@ -3,15 +3,27 @@ using Gubernare.Domain.Contexts.SharedContext.Entities;
 
 namespace Gubernare.Domain.Contexts.AccountContext.Entities;
 
-public class CourtLogin(
-    User userId,
-    string courtSystem,
-    string login,
-    Password password)
-    : Entity
+public class CourtLogin : Entity
 {
-    public User UserId { get; private set; } = userId;
-    public string CourtSystem{ get; private set; } = courtSystem;
-    public string Login { get; private set; } = login;
-    public Password Password { get; private set; } = password;
+    protected CourtLogin()
+    {
+    }
+
+    public CourtLogin(Guid userId, string courtSystem, string login, Password password)
+    {
+        UserId = userId;
+        CourtSystem = courtSystem;
+        Login = login;
+        Password = password;
+    }
+
+    // Chave estrangeira para o usuário
+    public Guid UserId { get; private set; }
+
+    // Propriedade de navegação para o User
+    public User User { get; private set; }
+
+    public string CourtSystem { get; private set; }
+    public string Login { get; private set; }
+    public Password Password { get; private set; }
 }

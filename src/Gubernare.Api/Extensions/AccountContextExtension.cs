@@ -1,8 +1,13 @@
+using System.Security.Claims;
+using Gubernare.Domain.Contexts.AccountContext.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Gubernare.Domain.Contexts.AccountContext.UseCases.Create;
 using Gubernare.Domain.Contexts.AccountContext.UseCases.Authenticate;
+using Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Contracts;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Gubernare.Api.Extensions;
 
@@ -12,6 +17,7 @@ public static class AccountContextExtension
     {
         AddCreateAccountServices(builder);
         AddAuthenticateServices(builder);
+        AddCreateCourtLogin(builder);
     }
 
     private static void AddCreateAccountServices(WebApplicationBuilder builder)
@@ -30,6 +36,13 @@ public static class AccountContextExtension
         builder.Services.AddTransient<
             Domain.Contexts.AccountContext.UseCases.Authenticate.Contracts.IRepository,
             Infrastructure.Contexts.AccountContext.UseCases.Authenticate.Repository>();
+    }    
+    
+    private static void AddCreateCourtLogin(WebApplicationBuilder builder)
+    {
+        builder.Services.AddTransient<
+            Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Contracts.IRepository,
+            Infrastructure.Contexts.AccountContext.UseCases.CreateCourtLogin.Repository>();
     }
 
     public static IEndpointRouteBuilder MapAccountApiV1(this IEndpointRouteBuilder routes)
@@ -55,6 +68,12 @@ public static class AccountContextExtension
            .WithSummary("Verifica autenticação")
            .WithDescription("Valida se o usuário está autenticado")
            .ProducesValidationProblem();
+        
+        api.MapPost("/courts", CreateCourtLogin)
+            .RequireAuthorization()
+            .WithSummary("Cadastra um tribunal ao sistema")
+            .WithDescription("Cadastra um novo tribunal no sistema")
+            .ProducesValidationProblem();
 
         return routes;
     }
@@ -81,6 +100,32 @@ public static class AccountContextExtension
             return TypedResults.Problem(result.ToProblemDetails());
 
         result.Data!.Token = JwtExtension.Generate(result.Data);
+        return TypedResults.Ok(result);
+    }
+
+
+    private static async
+        Task<Results<Ok<Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response>, ProblemHttpResult>>
+        CreateCourtLogin(
+            [FromBody] Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request request,
+            ClaimsPrincipal user,
+            [FromServices] IRequestHandler<Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request,
+                Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response> handler)
+    {
+        foreach (var claim in user.Claims)
+        {
+            Console.WriteLine($"{claim.Type} = {claim.Value}");
+        }
+        request = request with { UserId = new Guid(user.Claims.FirstOrDefault(c => c.Type == "Id")?.Value!) };
+        request = request with { UserId = Guid.Parse(user.Id()) };
+        
+
+        var result = await handler.Handle(request, CancellationToken.None);
+
+        if (!result.IsSuccess)
+            return TypedResults.Problem(result.ToProblemDetails());
+
+
         return TypedResults.Ok(result);
     }
 

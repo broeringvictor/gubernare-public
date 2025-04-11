@@ -1,15 +1,13 @@
-using Gubernare.Api;
+
 using Gubernare.Api.Extensions;
 
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
+using Microsoft.OpenApi.Models;
 using Scalar.AspNetCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
+builder.AddDefaultOpenApi(); 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SchemaFilter<DescriptionSchemaFilter>();

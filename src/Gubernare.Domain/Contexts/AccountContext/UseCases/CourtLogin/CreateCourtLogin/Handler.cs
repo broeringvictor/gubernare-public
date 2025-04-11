@@ -1,10 +1,8 @@
-using Gubernare.Domain.Contexts.AccountContext.Entities;
-using Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin.Contracts;
+using Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Contracts;
 using Gubernare.Domain.Contexts.AccountContext.ValueObjects;
-using Gubernare.Domain.Contexts.ClientContext.Entities;
 using MediatR;
 
-namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin;
+namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin;
 
 public class Handler : IRequestHandler<Request, Response>
 {
@@ -35,11 +33,11 @@ public class Handler : IRequestHandler<Request, Response>
         #region 02. Gerar os Objetos
 
         Password password;
-        CourtLogin courtLogin;
-
+        Entities.CourtLogin courtLogin;
+      
         try
         {
-            courtLogin = new CourtLogin(
+            courtLogin = new Entities.CourtLogin(
                 userId: request.UserId,
                 courtSystem: request.CourtSystem,
                 login: request.Login,

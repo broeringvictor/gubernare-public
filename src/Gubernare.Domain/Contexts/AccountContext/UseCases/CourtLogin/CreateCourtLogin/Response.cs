@@ -1,6 +1,6 @@
 using Flunt.Notifications;
 
-namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin;
+namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin;
 
 public class Response : SharedContext.UseCases.Response
 {
@@ -28,5 +28,3 @@ public class Response : SharedContext.UseCases.Response
 
     public ResponseData? Data { get; set; }
 }
-
-public record ResponseData(string CourtSystem);

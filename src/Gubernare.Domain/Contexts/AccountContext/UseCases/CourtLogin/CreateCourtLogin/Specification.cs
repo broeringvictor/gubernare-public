@@ -1,7 +1,7 @@
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin;
+namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin;
 
 public static class Specification
 {
