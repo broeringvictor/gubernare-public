@@ -1,0 +1,73 @@
+﻿<div class="uk-background-muted uk-padding uk-light">
+  <div class="uk-flex-center" uk-grid>
+    <div class="uk-width-1-1 uk-width-1-2@m">
+      <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded"
+           style="border: 1px solid #e5e5e5; background: #f8f8f8;"> <!-- substituí as variáveis do UIKit por valores diretos -->
+
+        <!-- Cabeçalho -->
+        <div class="uk-margin-medium-bottom uk-text-center">
+          <h3 class="uk-heading-medium uk-margin-remove" style="color: #1e87f0;">Conectar-se</h3>
+          <p class="uk-text-muted uk-margin-remove-top">Acesse sua conta</p>
+        </div>
+
+        <!-- Formulário -->
+        <form [formGroup]="form" (ngSubmit)="submit()" *ngIf="!busy">
+          <div class="uk-margin">
+            <input class="uk-input uk-border-rounded"
+                   type="email"
+                   formControlName="email"
+                   placeholder="E-mail"
+                   style="background: #fff; border-color: #ccc;">
+          </div>
+
+          <div class="uk-margin">
+            <input class="uk-input uk-border-rounded"
+                   type="password"
+                   formControlName="password"
+                   placeholder="Senha"
+                   style="background: #fff; border-color: #ccc;">
+          </div>
+
+          <div class="uk-margin">
+            <button type="submit"
+                    [disabled]="form.invalid || busy"
+                    class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded"
+                    style="background: #1e87f0; color: #fff;">
+              Entrar
+            </button>
+          </div>
+        </form>
+
+        <!-- Loading -->
+        <div *ngIf="busy" class="uk-text-center uk-padding-small">
+          <span uk-spinner></span> Entrando...
+        </div>
+
+        <!-- Links Secundários -->
+        <div class="uk-margin-medium-top uk-text-center">
+          <a routerLink="/recuperar-senha"
+             class="uk-button uk-button-link uk-text-small"
+             style="color: #1e87f0;">
+            Esqueci minha senha
+          </a>
+
+          <div class="uk-margin-small-top">
+            <a routerLink="/cadastrar"
+               class="uk-button uk-button-default uk-border-rounded uk-width-1-1"
+               style="border-color: #1e87f0; color: #1e87f0;">
+              Criar nova conta
+            </a>
+          </div>
+          <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+          </div>
+        </div>
+        <div *ngIf="Security.getUser()">
+          <p>Usuário logado: {{ Security.getUser()?.name }}</p>
+          <p>ID: {{ Security.getUser()?.id }}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

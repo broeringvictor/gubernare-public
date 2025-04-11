@@ -159,7 +159,6 @@ class LegalCasesOverviewActivity:
         try:
             self._click_menu_textual()
             self._click_relacao_processos()
-
             qtd = self._get_quantidade_processos()
             print(f"Quantidade de processos encontrados: {qtd}")
 

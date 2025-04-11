@@ -17,6 +17,16 @@ builder.Services.AddSwaggerGen(c =>
 builder.AddConfiguration();
 builder.AddDatabase();
 
+builder.Services.AddCors(options => //TODO: TIRAR MAIS TARDE!!!
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .AllowAnyOrigin()    // 👈 Permite qualquer origem
+            .AllowAnyMethod()    // 👈 Permite qualquer verbo (GET, POST, etc.)
+            .AllowAnyHeader();   // 👈 Permite qualquer cabeçalho
+    });
+});
 builder.AddAccountContext();
 builder.AddClientContext();
 
@@ -49,6 +59,6 @@ app.MapScalarApiReference(options =>
 });
 app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();
 
-
+app.UseCors("AllowAll");
 
 app.Run();

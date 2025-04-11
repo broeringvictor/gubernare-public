@@ -5,6 +5,13 @@
     "eventos": [
         [],
         [
+            "116",
+            "08/04/2025 01:22:50",
+            "Decorrido prazo\n- Refer. aos Eventos: 113 e 114",
+            "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
+            "Evento não gerou documento"
+        ],
+        [
             "115",
             "24/03/2025 23:59:59",
             "Confirmada a intimação eletrônica\n- Refer. aos Eventos: 113 e 114",
@@ -14,14 +21,14 @@
         [
             "114",
             "12/03/2025 17:50:33",
-            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 112\n(\nREQUERENTE\n-  JHONNATTAN DAVID CARDOZO)\nPrazo: 10 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 07/04/2025 23:59:59",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 112\n(\nREQUERENTE\n-  JHONNATTAN DAVID CARDOZO)\nPrazo: 10 dias Status:FECHADO\n(\n116 - Decorrido prazo\n)\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 07/04/2025 23:59:59",
             "marcos.pacheco\nMARCOS PACHECO\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
             "Evento não gerou documento"
         ],
         [
             "113",
             "12/03/2025 17:50:33",
-            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 112\n(\nREQUERIDO\n-  GISELE DE OLIVEIRA ROQUE)\nPrazo: 10 dias Status:ABERTO\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 07/04/2025 23:59:59",
+            "Expedida/certificada a intimação eletrônica\nRefer.  ao Evento 112\n(\nREQUERIDO\n-  GISELE DE OLIVEIRA ROQUE)\nPrazo: 10 dias Status:FECHADO\n(\n116 - Decorrido prazo\n)\nData inicial da contagem do prazo: 25/03/2025 00:00:00\nData final: 07/04/2025 23:59:59",
             "marcos.pacheco\nMARCOS PACHECO\nSERVIDOR UNIDADE JUDICIAL\nVara da Família, Idoso, Órfãos da Comarca de Palhoça",
             "Evento não gerou documento"
         ],
@@ -695,13 +702,6 @@
             "17/08/2022 01:14:53",
             "Decorrido prazo\n- Refer. ao Evento: 14",
             "SECFP\nSISTEMA DE FECHAMENTO DE PRAZOS",
-            "Evento não gerou documento"
-        ],
-        [
-            "16",
-            "09/08/2022 20:19:56",
-            "Confirmada a intimação eletrônica\n- Refer. ao Evento: 14",
-            "CRESSSC008800\nJAQUELINE DIAS BARREIRA MARISCAL\nPERITO\nASSISTENTE SOCIAL - ASSISTENTE SOCIAL",
             "Evento não gerou documento"
         ]
     ]

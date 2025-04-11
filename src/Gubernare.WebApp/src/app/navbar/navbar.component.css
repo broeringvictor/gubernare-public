@@ -1,0 +1,48 @@
+﻿#sidebar {
+  width: 250px;
+  z-index: 1000;
+}
+
+#sidebar.collapsed {
+  width: 70px;
+}
+
+/* Garante o desaparecimento suave do texto */
+.nav-text {
+  transition:
+    opacity 0.3s ease,
+    width 0.3s ease,
+    margin 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#sidebar.collapsed .nav-text {
+  opacity: 0;
+  width: 0;
+  margin-left: -10px;
+}
+
+/* Ajusta posicionamento dos ícones */
+#sidebar.collapsed .uk-nav li a {
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Rotação do ícone */
+#sidebar.collapsed [uk-icon="chevron-left"] {
+  transform: rotate(180deg);
+}
+
+/* Estados hover e ativo */
+.uk-nav li a:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-radius: 6px;
+}
+
+.uk-nav li.uk-active a {
+  background: #8B5CF6 !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+}

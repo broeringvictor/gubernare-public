@@ -76,5 +76,6 @@ public class UserMap : IEntityTypeConfiguration<User>
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade));
+        
     }
 }

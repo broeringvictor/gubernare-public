@@ -1,8 +1,10 @@
+using Gubernare.Domain.Contexts.AccountContext.Entities;
+using Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin.Contracts;
+using Gubernare.Domain.Contexts.AccountContext.ValueObjects;
 using Gubernare.Domain.Contexts.ClientContext.Entities;
-using Gubernare.Domain.Contexts.ClientContext.UseCases.CreateContract.Contracts;
 using MediatR;
 
-namespace Gubernare.Domain.Contexts.ClientContext.UseCases.CreateContract;
+namespace Gubernare.Domain.Contexts.AccountContext.UseCases.CreateCourtLogin;
 
 public class Handler : IRequestHandler<Request, Response>
 {
@@ -32,20 +34,16 @@ public class Handler : IRequestHandler<Request, Response>
 
         #region 02. Gerar os Objetos
 
-        Contract contract;
+        Password password;
+        CourtLogin courtLogin;
 
         try
         {
-            
-            contract = new Contract(
-                name: request.Name,
-                type: request.Type,
-                description: request.Description,
-                notes: request.Notes,
-                startDate: request.StartDate,
-                endDate: request.EndDate,
-                price: request.Price,
-                documentFolder: request.DocumentFolder
+            courtLogin = new CourtLogin(
+                userId: request.UserId,
+                courtSystem: request.CourtSystem,
+                login: request.Login,
+                password: new Password(request.Password)
             );
         }
         catch (Exception ex)
@@ -59,7 +57,7 @@ public class Handler : IRequestHandler<Request, Response>
 
         try
         {
-            await _repository.SaveAsync(contract, cancellationToken);
+            await _repository.SaveAsync(courtLogin, cancellationToken);
         }
         catch
         {
@@ -69,8 +67,8 @@ public class Handler : IRequestHandler<Request, Response>
         #endregion
 
         return new Response(
-            "Contrato criado com sucesso",
-            new ResponseData(contract.Id, contract.Name) // De acordo com Request
+            "Tribunal registrado com sucesso",
+            new ResponseData(courtLogin.CourtSystem) // De acordo com Request
         );
     }
 }

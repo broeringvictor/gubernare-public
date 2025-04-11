@@ -12,7 +12,7 @@ class EprocLogin:
     def __init__(self, driver):
         self.driver = driver
         self.user = os.getenv("OAB")
-        self.password = os.getenv("PASSWORD")  # Remova o 'r' antes da string
+        self.password = os.getenv("PASSWORD") 
 
 
     def _handle_error(self, etapa, exception):

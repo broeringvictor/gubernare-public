@@ -490,7 +490,7 @@
         [
             "44",
             "18/04/2023 11:06:19",
-            "Juntada de mandado cumprido\n- Refer. ao Evento: 40\nData do cumprimento: 18/04/2023\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)\nPrazo: 30 dias Status:FECHADO\n(\n46 - Decorrido prazo\n)\nData inicial da contagem do prazo: 19/04/2023 00:00:00\nData final: 01/06/2023 23:59:59\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES\nData de Cumprimento: 18/04/2023",
+            "Juntada de mandado cumprido\n- Refer. ao Evento: 40\nData do cumprimento: 18/04/2023\n(\nEXECUTADO\n-  WILLIAN FRANCISCO DOS PRAZERES)\nPrazo: 30 dias Status:FECHADO\n(\n46 - Decorrido prazo\n)\nData inicial da contagem do prazo: 19/04/2023 00:00:00\nData final: 01/06/2023 23:59:59\nCarregando dados do mandado ...",
             "roger\nROGER BERNARDO COLOSSI\nOFICIAL DE JUSTIÇA\nCentral de Mandados - Florianópolis",
             "CERT1\nOUT2\nfile_download\nauto_awesome_motion"
         ],
@@ -511,14 +511,14 @@
         [
             "41",
             "13/03/2023 18:13:56",
-            "Recebido o mandado para cumprimento pelo oficial de justiça\n- Refer. ao Evento: 40\nOficial: ROGER BERNARDO COLOSSI\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES",
+            "Recebido o mandado para cumprimento pelo oficial de justiça\n- Refer. ao Evento: 40\nOficial: ROGER BERNARDO COLOSSI\nCarregando dados do mandado ...",
             "mrss5462\nMARCIA REGINA SILVEIRA DOS SANTOS\nSERVIDOR CENTRAL DE MANDADOS\nCentral de Mandados - Florianópolis",
             "Evento não gerou documento"
         ],
         [
             "40",
             "13/03/2023 18:13:38",
-            "Expedição de mandado\n- FNSCLCEMAN - Devolvido - Cumprido - Evento: 44\nDestinatário: WILLIAN FRANCISCO DOS PRAZERES (Prazo: 30 dias - Juntada)\nNúmero do mandado: 310040281097",
+            "Expedição de mandado\n- FNSCLCEMAN - Devolvido - Cumprido - Evento: 44\nCarregando dados do mandado ...",
             "fdribeiro\nFELIPE ANTÔNIO DONDONI RIBEIRO\nSERVIDOR UNIDADE JUDICIAL AVANÇADO\n1ª Vara da Família e Órfãos da Comarca da Capital - Eduardo Luz",
             "MAND1"
         ],

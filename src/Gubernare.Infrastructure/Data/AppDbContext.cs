@@ -18,6 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<Role> Roles { get; set; } = null!;
     public DbSet<Contract> Contracts { get; set; } = null!;
     public DbSet<IndividualClient> IndividualClients { get; set; } = null!;
+    public DbSet<CourtLogin> CourtLogins { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -25,6 +26,7 @@ public class AppDbContext : DbContext
         modelBuilder.ApplyConfiguration(new RoleMap());
         modelBuilder.ApplyConfiguration(new ContractMap());
         modelBuilder.ApplyConfiguration(new IndividualClientMap());
+        modelBuilder.ApplyConfiguration(new CourtLoginMap());
 
     }
 }

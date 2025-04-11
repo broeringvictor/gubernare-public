@@ -6,17 +6,17 @@ from src.Api.Service.EprocSearch import eproc_search
 
 app = Flask(__name__)
 
-# Configuração do cache
-app.config['CACHE_TYPE'] = 'SimpleCache'
+# Or using a built-in type
+app.config['CACHE_TYPE'] = 'simple'
 app.config['CACHE_DEFAULT_TIMEOUT'] = 80000
 cache = Cache(app)
-
+# cache.clear()
 def get_cached_processes():
-    # Verifica se já existe no cache
+    
     processes = cache.get('all_processes')
 
     if not processes:
-        # Se não existir, busca e armazena no cache
+       
         processes = eproc_search()
         cache.set('all_processes', processes)
 
@@ -26,7 +26,7 @@ def all_processes():
     processes = get_cached_processes()
     return jsonify(processes), 200
 
-@app.route("/processes_with_deadline", methods=['GET'])
+@app.route("/processes/dates", methods=['GET'])
 @cache.memoize(timeout=60)  # Cache baseado nos parâmetros
 def processes_with_deadline():
     date_param = request.args.get('date')
