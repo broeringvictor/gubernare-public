@@ -277,12 +277,12 @@ namespace Gubernare.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
+                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.EncryptedPassword", "Password", b1 =>
                         {
                             b1.Property<Guid>("CourtLoginId")
                                 .HasColumnType("uniqueidentifier");
 
-                            b1.Property<string>("Hash")
+                            b1.Property<string>("Cipher")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)")
                                 .HasColumnName("PasswordHash");
@@ -303,29 +303,6 @@ namespace Gubernare.Api.Migrations
 
             modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.User", b =>
                 {
-                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
-                        {
-                            b1.Property<Guid>("UserId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Hash")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("PasswordHash");
-
-                            b1.Property<string>("ResetCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)")
-                                .HasColumnName("PasswordResetCode");
-
-                            b1.HasKey("UserId");
-
-                            b1.ToTable("User");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UserId");
-                        });
-
                     b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Email", "Email", b1 =>
                         {
                             b1.Property<Guid>("UserId")
@@ -371,6 +348,29 @@ namespace Gubernare.Api.Migrations
 
                             b1.Navigation("Verification")
                                 .IsRequired();
+                        });
+
+                    b.OwnsOne("Gubernare.Domain.Contexts.AccountContext.ValueObjects.Password", "Password", b1 =>
+                        {
+                            b1.Property<Guid>("UserId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("Hash")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PasswordHash");
+
+                            b1.Property<string>("ResetCode")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PasswordResetCode");
+
+                            b1.HasKey("UserId");
+
+                            b1.ToTable("User");
+
+                            b1.WithOwner()
+                                .HasForeignKey("UserId");
                         });
 
                     b.Navigation("Email")

@@ -9,7 +9,7 @@ public class CourtLogin : Entity
     {
     }
 
-    public CourtLogin(Guid userId, string courtSystem, string login, Password password)
+    public CourtLogin(Guid userId, string courtSystem, string login, EncryptedPassword password)
     {
         UserId = userId;
         CourtSystem = courtSystem;
@@ -25,5 +25,5 @@ public class CourtLogin : Entity
 
     public string CourtSystem { get; private set; }
     public string Login { get; private set; }
-    public Password Password { get; private set; }
+    public EncryptedPassword Password { get; private set; }
 }

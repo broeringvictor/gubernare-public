@@ -13,4 +13,8 @@
       <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Contexts\LegalProceeding\ValueObjects\" />
+    </ItemGroup>
+
 </Project>

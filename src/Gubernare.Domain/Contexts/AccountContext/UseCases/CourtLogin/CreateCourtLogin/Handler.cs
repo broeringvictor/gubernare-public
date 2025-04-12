@@ -32,16 +32,16 @@ public class Handler : IRequestHandler<Request, Response>
 
         #region 02. Gerar os Objetos
 
-        Password password;
+
         Entities.CourtLogin courtLogin;
-      
+
         try
         {
             courtLogin = new Entities.CourtLogin(
                 userId: request.UserId,
                 courtSystem: request.CourtSystem,
                 login: request.Login,
-                password: new Password(request.Password)
+                password: new EncryptedPassword(request.Password)
             );
         }
         catch (Exception ex)

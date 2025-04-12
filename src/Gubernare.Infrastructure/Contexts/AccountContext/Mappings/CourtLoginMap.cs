@@ -34,7 +34,7 @@ public class CourtLoginMap : IEntityTypeConfiguration<CourtLogin>
 
         // Configurar a propriedade Password como um objeto agregado
         builder.OwnsOne(x => x.Password)
-            .Property(x => x.Hash) // Acesso à propriedade Hash
+            .Property(x => x.Cipher) // Acesso à propriedade Hash
             .HasColumnName("PasswordHash")
             .IsRequired();
     }

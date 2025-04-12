@@ -1,12 +1,7 @@
 using System.Security.Claims;
-using Gubernare.Domain.Contexts.AccountContext.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using Gubernare.Domain.Contexts.AccountContext.UseCases.Create;
-using Gubernare.Domain.Contexts.AccountContext.UseCases.Authenticate;
-using Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Contracts;
-using Microsoft.AspNetCore.Authorization;
 
 
 namespace Gubernare.Api.Extensions;
@@ -43,6 +38,9 @@ public static class AccountContextExtension
         builder.Services.AddTransient<
             Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Contracts.IRepository,
             Infrastructure.Contexts.AccountContext.UseCases.CreateCourtLogin.Repository>();
+        builder.Services.AddTransient<
+            Domain.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Contracts.IRepository,
+            Infrastructure.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Repository>();
     }
 
     public static IEndpointRouteBuilder MapAccountApiV1(this IEndpointRouteBuilder routes)
@@ -63,7 +61,7 @@ public static class AccountContextExtension
             .ProducesProblem(401)
             .ProducesProblem(500);
 
-        api.MapGet("/authenticated", IsAuthenticated)
+        api.MapGet("/authenticat", IsAuthenticated)
            .RequireAuthorization()
            .WithSummary("Verifica autenticação")
            .WithDescription("Valida se o usuário está autenticado")
@@ -73,6 +71,12 @@ public static class AccountContextExtension
             .RequireAuthorization()
             .WithSummary("Cadastra um tribunal ao sistema")
             .WithDescription("Cadastra um novo tribunal no sistema")
+            .ProducesValidationProblem();
+        
+        api.MapGet("/courts", GetAllCourtLogin)
+            .RequireAuthorization()
+            .WithSummary("Pegar todos os tribunais cadastrados")
+            .WithDescription("Retorna uma lista com o ID e o Nome dos tribunais cadastrados")
             .ProducesValidationProblem();
 
         return routes;
@@ -105,12 +109,12 @@ public static class AccountContextExtension
 
 
     private static async
-        Task<Results<Ok<Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response>, ProblemHttpResult>>
+        Task<Results<Ok<Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response>, ProblemHttpResult>>
         CreateCourtLogin(
-            [FromBody] Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request request,
+            [FromBody] Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request request,
             ClaimsPrincipal user,
-            [FromServices] IRequestHandler<Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request,
-                Gubernare.Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response> handler)
+            [FromServices] IRequestHandler<Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request,
+                Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response> handler)
     {
         foreach (var claim in user.Claims)
         {
@@ -128,6 +132,28 @@ public static class AccountContextExtension
 
         return TypedResults.Ok(result);
     }
+    
+    private static async Task<Results<
+        Ok<Domain.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Response>, 
+        ProblemHttpResult
+    >> GetAllCourtLogin(
+        ClaimsPrincipal user,
+        [FromServices] IRequestHandler<
+            Domain.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Request,
+            Domain.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Response
+        > handler)
+    {
+        var userId = Guid.Parse(user.Id()); // ou extraia do claim se preferir
+        var request = new Domain.Contexts.AccountContext.UseCases.CourtLogin.GetAllCourtLogin.Request(userId);
+
+        var result = await handler.Handle(request, CancellationToken.None);
+
+        if (!result.IsSuccess)
+            return TypedResults.Problem(result.ToProblemDetails());
+
+        return TypedResults.Ok(result);
+    }
+
 
     private static IResult IsAuthenticated()
     {
