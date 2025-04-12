@@ -21,10 +21,37 @@ public class LegalProceeding : Entity
     public string Type { get; private set;} = string.Empty;
     public string Status { get; private set; } = string.Empty;
     public DateTime? FinishedDateTime { get; private set; }
-    
-    
 
 
+    #region Constructor
+
+// Construtor completo (aceitando todos os campos)
+    public LegalProceeding(
+        string name,
+        List<IndividualClient> individualClients,
+        string clientRole,
+        string description,
+        string legalCourt,
+        string accessCode,
+        DateTime date,
+        string type,
+        string status,
+        DateTime? finishedDateTime
+    )
+    {
+        Name = name;
+        ClientRole = clientRole;
+        Description = description;
+        LegalCourt = legalCourt;
+        AccessCode = accessCode;
+        Date = date;
+        Type = type;
+        Status = status;
+        FinishedDateTime = finishedDateTime;
+    }
+
+    #endregion
+    
     
     
     
