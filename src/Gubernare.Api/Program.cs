@@ -27,6 +27,7 @@ builder.Services.AddCors(options => //TODO: TIRAR MAIS TARDE!!!
 });
 builder.AddAccountContext();
 builder.AddClientContext();
+builder.AddLegalProceedingContext();
 
 
 builder.AddJwtAuthentication();
@@ -46,6 +47,7 @@ app.UseAuthorization();
 
 app.MapAccountApiV1();
 app.MapClientApiV1();
+app.MapLegalProceedingApiV1();
 
 
 app.MapOpenApi();

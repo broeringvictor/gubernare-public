@@ -125,6 +125,9 @@ namespace Gubernare.Api.Migrations
                         .HasColumnType("DATETIME")
                         .HasColumnName("EndDate");
 
+                    b.Property<Guid?>("LegalProceedingId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(300)
@@ -150,6 +153,8 @@ namespace Gubernare.Api.Migrations
                         .HasColumnName("Type");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("LegalProceedingId");
 
                     b.ToTable("Contract", (string)null);
                 });
@@ -237,6 +242,246 @@ namespace Gubernare.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("IndividualClient", (string)null);
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.OpposingParty", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("City")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("City");
+
+                    b.Property<string>("Cnpj")
+                        .HasMaxLength(20)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Cnpj");
+
+                    b.Property<string>("Country")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Country");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Email");
+
+                    b.Property<string>("Homeland")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Homeland");
+
+                    b.Property<string>("InscricaoEstadual")
+                        .HasMaxLength(30)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("InscricaoEstadual");
+
+                    b.Property<string>("InscricaoMunicipal")
+                        .HasMaxLength(30)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("InscricaoMunicipal");
+
+                    b.Property<string>("JobTitle")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("JobTitle");
+
+                    b.Property<string>("Lawyers")
+                        .HasMaxLength(1000)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Lawyers");
+
+                    b.Property<string>("MaritalStatus")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("MaritalStatus");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Name");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(1000)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Notes");
+
+                    b.Property<int>("PersonType")
+                        .HasColumnType("int")
+                        .HasColumnName("PersonType");
+
+                    b.Property<string>("Phone")
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Phone");
+
+                    b.Property<string>("State")
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("State");
+
+                    b.Property<string>("Street")
+                        .HasMaxLength(200)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Street");
+
+                    b.Property<string>("ZipCode")
+                        .HasMaxLength(20)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("ZipCode");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OpposingParty", (string)null);
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AccessCode")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("AccessCode");
+
+                    b.Property<string>("ClientRole")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("ClientRole");
+
+                    b.Property<int?>("CourtInstance")
+                        .HasColumnType("int")
+                        .HasColumnName("CourtInstance");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Date");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(2000)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Description");
+
+                    b.Property<DateTime?>("FinishedDateTime")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("FinishedDateTime");
+
+                    b.Property<string>("LegalCourt")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("LegalCourt");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Name");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Number");
+
+                    b.Property<string>("OpposingPartyRole")
+                        .HasMaxLength(120)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("OpposingPartyRole");
+
+                    b.Property<string>("Status")
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Status");
+
+                    b.Property<string>("Type")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Type");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LegalProceeding", (string)null);
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceedingEvent", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Date");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Description");
+
+                    b.Property<DateTime?>("LegalDeadline")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("LegalDeadline");
+
+                    b.Property<Guid>("LegalProceedingId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("LegalProceedingId");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Status");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Type");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LegalProceedingId");
+
+                    b.ToTable("LegalProceedingEvent", (string)null);
+                });
+
+            modelBuilder.Entity("LegalProceedingOpposingParty", b =>
+                {
+                    b.Property<Guid>("LegalProceedingId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OpposingPartyId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("LegalProceedingId", "OpposingPartyId");
+
+                    b.HasIndex("OpposingPartyId");
+
+                    b.ToTable("LegalProceedingOpposingParty");
+                });
+
+            modelBuilder.Entity("ListIndividualClientLegalProceeding", b =>
+                {
+                    b.Property<Guid>("IndividualClientsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("LegalProceedingId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("IndividualClientsId", "LegalProceedingId");
+
+                    b.HasIndex("LegalProceedingId");
+
+                    b.ToTable("ListIndividualClientLegalProceeding");
                 });
 
             modelBuilder.Entity("UserRole", b =>
@@ -380,6 +625,13 @@ namespace Gubernare.Api.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.Contract", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", null)
+                        .WithMany("Contracts")
+                        .HasForeignKey("LegalProceedingId");
+                });
+
             modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.IndividualClient", b =>
                 {
                     b.OwnsOne("Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents.Cpf", "CpfNumber", b1 =>
@@ -425,6 +677,92 @@ namespace Gubernare.Api.Migrations
                     b.Navigation("RgNumber");
                 });
 
+            modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.OpposingParty", b =>
+                {
+                    b.OwnsOne("Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents.Cpf", "CpfNumber", b1 =>
+                        {
+                            b1.Property<Guid>("OpposingPartyId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("CpfValue")
+                                .IsRequired()
+                                .HasMaxLength(11)
+                                .HasColumnType("nvarchar(11)")
+                                .HasColumnName("CpfNumber");
+
+                            b1.HasKey("OpposingPartyId");
+
+                            b1.ToTable("OpposingParty");
+
+                            b1.WithOwner()
+                                .HasForeignKey("OpposingPartyId");
+                        });
+
+                    b.OwnsOne("Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents.Rg", "RgNumber", b1 =>
+                        {
+                            b1.Property<Guid>("OpposingPartyId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("RgValue")
+                                .IsRequired()
+                                .HasMaxLength(20)
+                                .HasColumnType("VARCHAR")
+                                .HasColumnName("RgNumber");
+
+                            b1.HasKey("OpposingPartyId");
+
+                            b1.ToTable("OpposingParty");
+
+                            b1.WithOwner()
+                                .HasForeignKey("OpposingPartyId");
+                        });
+
+                    b.Navigation("CpfNumber");
+
+                    b.Navigation("RgNumber");
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceedingEvent", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", "LegalProceeding")
+                        .WithMany("LegalProceedingEvents")
+                        .HasForeignKey("LegalProceedingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LegalProceeding");
+                });
+
+            modelBuilder.Entity("LegalProceedingOpposingParty", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", null)
+                        .WithMany()
+                        .HasForeignKey("LegalProceedingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Gubernare.Domain.Contexts.ClientContext.Entities.OpposingParty", null)
+                        .WithMany()
+                        .HasForeignKey("OpposingPartyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ListIndividualClientLegalProceeding", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.ClientContext.Entities.IndividualClient", null)
+                        .WithMany()
+                        .HasForeignKey("IndividualClientsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", null)
+                        .WithMany()
+                        .HasForeignKey("LegalProceedingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("UserRole", b =>
                 {
                     b.HasOne("Gubernare.Domain.Contexts.AccountContext.Entities.Role", null)
@@ -443,6 +781,13 @@ namespace Gubernare.Api.Migrations
             modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.User", b =>
                 {
                     b.Navigation("CourtLogins");
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", b =>
+                {
+                    b.Navigation("Contracts");
+
+                    b.Navigation("LegalProceedingEvents");
                 });
 #pragma warning restore 612, 618
         }

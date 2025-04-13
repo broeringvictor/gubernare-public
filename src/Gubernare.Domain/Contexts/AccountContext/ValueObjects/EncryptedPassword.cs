@@ -49,7 +49,7 @@ namespace Gubernare.Domain.Contexts.AccountContext.ValueObjects
             return $"{ivBase64}:{cipherBase64}";
         }
 
-        private static string Decrypt(string cipher)
+        public static string Decrypt(string cipher)
         {
             if (string.IsNullOrEmpty(cipher))
                 return string.Empty;

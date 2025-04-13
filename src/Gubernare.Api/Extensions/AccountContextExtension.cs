@@ -116,10 +116,6 @@ public static class AccountContextExtension
             [FromServices] IRequestHandler<Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Request,
                 Domain.Contexts.AccountContext.UseCases.CourtLogin.CreateCourtLogin.Response> handler)
     {
-        foreach (var claim in user.Claims)
-        {
-            Console.WriteLine($"{claim.Type} = {claim.Value}");
-        }
         request = request with { UserId = new Guid(user.Claims.FirstOrDefault(c => c.Type == "Id")?.Value!) };
         request = request with { UserId = Guid.Parse(user.Id()) };
         

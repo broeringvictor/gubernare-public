@@ -31,4 +31,8 @@
       <None Remove="Gubernare.Api.http" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>

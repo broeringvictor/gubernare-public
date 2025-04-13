@@ -29,6 +29,7 @@ public class IndividualClient : Entity
     public DateTime FristContactAt { get; private set; } = DateTime.Now;
     public string? FristContact { get; private set; }
     public List<Contract> Contracts { get; private set; } = new();
+    public List<LegalProceeding.Entities.LegalProceeding> LegalProceedings { get; private set; } = new();
 
     #endregion
 

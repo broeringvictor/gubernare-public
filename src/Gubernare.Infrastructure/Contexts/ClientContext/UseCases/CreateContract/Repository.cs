@@ -5,17 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Gubernare.Infrastructure.Contexts.ClientContext.UseCases.CreateContract;
 
-public class Repository : IRepository
+public class Repository(AppDbContext context) : IRepository
 {
-    private readonly AppDbContext _context;
-
-    public Repository(AppDbContext context)
-        => _context = context;
-
     public async Task SaveAsync(Contract contract, CancellationToken cancellationToken)
     {
 
-        await _context.Contracts.AddAsync(contract, cancellationToken);
-        await _context.SaveChangesAsync(cancellationToken);
+        await context.Contracts.AddAsync(contract, cancellationToken);
+        await context.SaveChangesAsync(cancellationToken);
     }
 }

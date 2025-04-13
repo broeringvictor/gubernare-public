@@ -1,7 +1,9 @@
 using Gubernare.Domain.Contexts.AccountContext.Entities;
 using Gubernare.Domain.Contexts.ClientContext.Entities;
+using Gubernare.Domain.Contexts.LegalProceeding.Entities;
 using Gubernare.Infrastructure.Contexts.AccountContext.Mappings;
 using Gubernare.Infrastructure.Contexts.ClientContext.Mappings;
+using Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gubernare.Infrastructure.Data;
@@ -19,6 +21,12 @@ public class AppDbContext : DbContext
     public DbSet<Contract> Contracts { get; set; } = null!;
     public DbSet<IndividualClient> IndividualClients { get; set; } = null!;
     public DbSet<CourtLogin> CourtLogins { get; set; } = null!;
+    public DbSet<OpposingParty> OpposingParties { get; set; } = null!;
+    public DbSet<LegalProceeding> LegalProceedings { get; set; } = null!;
+    public DbSet<LegalProceedingEvent> LegalProceedingEvents { get; set; } = null!;
+    
+    
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -27,6 +35,9 @@ public class AppDbContext : DbContext
         modelBuilder.ApplyConfiguration(new ContractMap());
         modelBuilder.ApplyConfiguration(new IndividualClientMap());
         modelBuilder.ApplyConfiguration(new CourtLoginMap());
+        modelBuilder.ApplyConfiguration(new OpposingPartyMap());
+        modelBuilder.ApplyConfiguration(new LegalProceedingEventMap());
+        modelBuilder.ApplyConfiguration(new LegalProceedingMap());
 
     }
 }
