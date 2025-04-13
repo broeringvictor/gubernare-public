@@ -3,11 +3,13 @@ using Gubernare.Domain.Contexts.LegalProceeding.Enums;
 using Gubernare.Domain.Contexts.SharedContext.Entities;
 using System.Collections.Generic;
 using System;
+using System.Text.Json.Serialization;
 
 namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
 {
     public class LegalProceeding : Entity
     {
+        //TODO: ADICIONAR VALOR DA CAULA E ULTIMA MOVIMENTACAO, VARA
         // Construtor vazio protegido (para uso de ORMs, se necessário).
         protected LegalProceeding()
         {
@@ -16,6 +18,8 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
         List<OpposingParty> opposingParties = new List<OpposingParty>();
         List<IndividualClient> individualClients = new List<IndividualClient>();
         List<LegalProceedingEvent> legalProceedingEvents = new List<LegalProceedingEvent>();
+        
+        [JsonPropertyName("Number")]
         public string Number { get; private set; }
         public string Name { get; private set; }
         public string ClientRole { get; private set; }
@@ -23,9 +27,13 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
         public CourtInstances? CourtInstance { get; private set; }
 
         public string Description { get; private set; }
+        
+        [JsonPropertyName("LegalCourt")]
         public string LegalCourt { get; private set; }
         public string AccessCode { get; private set; }
         public DateTime Date { get; private set; }
+        
+        [JsonPropertyName("Type")]
         public string Type { get; private set; }
         public string Status { get; private set; }
         public DateTime? FinishedDateTime { get; private set; }

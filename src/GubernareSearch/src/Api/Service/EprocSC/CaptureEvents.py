@@ -2,9 +2,9 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-import time
+
 from bs4 import SoupStrainer
-import json
+
 import os
 
 def _processar_celula(texto):
@@ -24,15 +24,6 @@ class CaptureEvents:
         # Cria a pasta asserts se não existir
         os.makedirs('asserts', exist_ok=True)
 
-    @staticmethod
-    def _salvar_json(resultado):
-        # Gera nome do arquivo válido
-        nome_arquivo = resultado['numero_processo'].replace('/', '_').replace('.', '_') + '.json'
-        caminho = os.path.join('asserts', nome_arquivo)
-
-        # Salva o arquivo com formatação
-        with open(caminho, 'w', encoding='utf-8') as f:
-            json.dump(resultado, f, ensure_ascii=False, indent=4)
 
     def executar(self):
         resultados = []
@@ -110,14 +101,25 @@ class CaptureEvents:
                 self.driver.switch_to.window(original_window)
     
                 resultado = {
-                    "numero_processo": processo.numero_processo,
+                    "Number": processo.numero_processo,
+                    "LegalCourt": processo.vara,
+                    "Procedimento": processo.procedimento,
+                    "Parte Ativa": processo.parte_ativa,
+                    "Parte Passiva": processo.parte_passiva,
+                    "Competencia": processo.competencia,
+                    "Type": processo.assunto,
+                    "Ultima Movimentacao": processo.ultima_movimentacao,
+                    "Data Ultima Movimentacao": processo.data_ultima_movimentacao,
+                    "Data Distribuicao": processo.data_distribuicao,
+                    "Valor Causa": processo.valor_causa,   
+                               
                     "status": "SUCESSO",
                     "tentativas": tentativa + 1,
-                    "eventos": eventos  # Agora como último campo
+                    "eventos": eventos 
                 }
     
                 # Salva o JSON na pasta asserts
-                self._salvar_json(resultado)
+               
                 return resultado
     
             except Exception as e:
@@ -129,11 +131,10 @@ class CaptureEvents:
                     self.driver.get(self.base_url)
     
         resultado = {
-            "numero_processo": processo.numero_processo,
+            "Number": processo.numero_processo,
             "status": "FALHA",
             "tentativas": self.max_retries,
-            "eventos": []  # Último campo mesmo quando vazio
+            "eventos": []
         }
-        self._salvar_json(resultado)
         return resultado
         

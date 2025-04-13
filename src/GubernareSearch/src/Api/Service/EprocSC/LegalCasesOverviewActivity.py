@@ -163,12 +163,7 @@ class LegalCasesOverviewActivity:
             print(f"Quantidade de processos encontrados: {qtd}")
 
             self._processar_linhas()
-
-            print("\n----- Processos encontrados -----")
-            for processo in self.lista_processos:
-                
-                print(processo.numero_processo)
-
+            
             return self.lista_processos
 
         except Exception as main_error:

@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Gubernare.Domain.Contexts.AccountContext.Entities;
 using Gubernare.Domain.Contexts.AccountContext.ValueObjects;
 using Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProceeding.Contracts;
@@ -15,6 +16,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProce
         {
             #region 01. Recupera o CourtLogin
             CourtLogin? courtLogin;
+            
             try
             {
                 courtLogin = await repository.GetByIdAsync(request.Id, cancellationToken);
@@ -26,7 +28,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProce
                 return new Response("[A1RP101] Não foi possível recuperar seu perfil", 500);
             }
 
-            var courtCipher = string.Empty;
+            string courtCipher;
 
             try
             {
@@ -43,7 +45,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProce
             try
             {
                 
-                await service.SendSearchAllLegalProceedingAsync(courtLogin.Login, courtCipher, cancellationToken);
+              var search = await service.SendSearchAllLegalProceedingAsync(courtLogin.Login, courtCipher, cancellationToken);
             }
             catch (Exception e)
             {
@@ -53,8 +55,37 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProce
             #endregion
             
             #region 03. Organizar os dados
-            
+
+          
+            try
+            {
+                var legalProceedings = JsonSerializer.Deserialize<List<Entities.LegalProceeding>>(
+                    search,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+                );
+
+                // Cria uma lista para armazenar os processos desserializados
+                var proceedingsList = new List<Entities.LegalProceeding>();
+
+                if (legalProceedings != null)
+                {
+                    foreach (var proceeding in legalProceedings)
+                    {
+                        // Adiciona cada processo à lista
+                        proceedingsList.Add(proceeding);
+                    }
+                }
+
+                // Aqui você pode usar a lista proceedingsList conforme necessário
+                // (ex: adicionar ao repositório, incluir na resposta, etc.)
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return new Response("[A1RP104] Falha ao processar os dados.", 500);
+            }
             #endregion
+
 
             return new Response("Sucesso", 200);
         }
