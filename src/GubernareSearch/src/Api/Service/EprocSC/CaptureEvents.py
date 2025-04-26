@@ -102,17 +102,16 @@ class CaptureEvents:
     
                 resultado = {
                     "Number": processo.numero_processo,
-                    "LegalCourt": processo.vara,
+                    "CourtDivisionName": processo.vara,
                     "Procedimento": processo.procedimento,
-                    "Parte Ativa": processo.parte_ativa,
+                    "ParteAtiva": processo.parte_ativa,
                     "Parte Passiva": processo.parte_passiva,
                     "Competencia": processo.competencia,
                     "Type": processo.assunto,
                     "Ultima Movimentacao": processo.ultima_movimentacao,
                     "Data Ultima Movimentacao": processo.data_ultima_movimentacao,
-                    "Data Distribuicao": processo.data_distribuicao,
-                    "Valor Causa": processo.valor_causa,   
-                               
+                    "DistributionDate": processo.data_distribuicao,
+                    "CauseValue": float(processo.valor_causa.replace('R$', '').replace('.', '').replace(',', '.').strip()),                                
                     "status": "SUCESSO",
                     "tentativas": tentativa + 1,
                     "eventos": eventos 

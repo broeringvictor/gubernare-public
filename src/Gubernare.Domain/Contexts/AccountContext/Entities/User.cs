@@ -1,4 +1,5 @@
 using Gubernare.Domain.Contexts.AccountContext.ValueObjects;
+using Gubernare.Domain.Contexts.LegalProceeding.Entities;
 using Gubernare.Domain.Contexts.SharedContext.Entities;
 
 namespace Gubernare.Domain.Contexts.AccountContext.Entities;
@@ -29,6 +30,7 @@ public class User : Entity
     public List<Role> Roles { get; set; } = new();
     
     public List<CourtLogin> CourtLogins { get; set; } = new();
+    public List<ToDo>? Tasks { get; set; } = new();
 
     public void UpdatePassword(string plainTextPassword, string code)
     {

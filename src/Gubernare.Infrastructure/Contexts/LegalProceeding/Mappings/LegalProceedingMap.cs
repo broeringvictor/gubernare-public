@@ -1,13 +1,12 @@
 ﻿using Gubernare.Domain.Contexts.ClientContext.Entities;
-using Gubernare.Domain.Contexts.LegalProceeding.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
+namespace Gubernare.Infrastructure.Contexts.LegalProceeding.Mappings
 {
-    public class LegalProceedingMap : IEntityTypeConfiguration<LegalProceeding>
+    public class LegalProceedingMap : IEntityTypeConfiguration<Domain.Contexts.LegalProceeding.Entities.LegalProceeding>
     {
-        public void Configure(EntityTypeBuilder<LegalProceeding> builder)
+        public void Configure(EntityTypeBuilder<Domain.Contexts.LegalProceeding.Entities.LegalProceeding> builder)
         {
             // Nome da Tabela
             builder.ToTable("LegalProceeding");
@@ -57,6 +56,18 @@ namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
                 .HasColumnType("NVARCHAR")
                 .HasMaxLength(100)
                 .IsRequired(false);
+            
+            builder.Property(x => x.CourtDivisionName)
+                .HasColumnName("CourtDivisionName")
+                .HasColumnType("NVARCHAR")
+                .HasMaxLength(100)
+                .IsRequired(false);
+            
+            builder.Property(x => x.CauseValue)
+                .HasColumnName("CauseValue")
+                .HasColumnType("NVARCHAR")
+                .HasMaxLength(100)
+                .IsRequired(false);
 
             builder.Property(x => x.AccessCode)
                 .HasColumnName("AccessCode")
@@ -64,7 +75,7 @@ namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
                 .HasMaxLength(100)
                 .IsRequired(false);
 
-            builder.Property(x => x.Date)
+            builder.Property(x => x.DistributionDate)
                 .HasColumnName("Date")
                 .IsRequired();
 
@@ -105,7 +116,7 @@ namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
                         .OnDelete(DeleteBehavior.Cascade),
                     // Configuração do lado LegalProceeding
                     x => x
-                        .HasOne<LegalProceeding>()
+                        .HasOne<Domain.Contexts.LegalProceeding.Entities.LegalProceeding>()
                         .WithMany()
                         .HasForeignKey("LegalProceedingId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -125,7 +136,7 @@ namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
                         .OnDelete(DeleteBehavior.Cascade),
                     // Configuração do lado LegalProceeding
                     x => x
-                        .HasOne<LegalProceeding>()
+                        .HasOne<Domain.Contexts.LegalProceeding.Entities.LegalProceeding>()
                         .WithMany()
                         .HasForeignKey("LegalProceedingId")
                         .OnDelete(DeleteBehavior.Cascade)

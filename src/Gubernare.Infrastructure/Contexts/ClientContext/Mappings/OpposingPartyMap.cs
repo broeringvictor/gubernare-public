@@ -145,7 +145,7 @@ namespace Gubernare.Infrastructure.Contexts.ClientContext.Mappings
                     "LegalProceedingOpposingParty", 
                     // Lado OpposingParty -> Tabela
                     j => j
-                        .HasOne<LegalProceeding>()
+                        .HasOne<Domain.Contexts.LegalProceeding.Entities.LegalProceeding>()
                         .WithMany()
                         .HasForeignKey("LegalProceedingId")
                         .OnDelete(DeleteBehavior.Cascade),

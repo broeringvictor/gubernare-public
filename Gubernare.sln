@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gubernare.Tests", "Gubernare.Tests\Gubernare.Tests.csproj", "{F6117078-8E99-46B3-A244-7F22C87E1725}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guabernare.AppHost", "src\Guabernare.AppHost\Guabernare.AppHost.csproj", "{4661193E-3E50-4C54-8311-18D9EDDE96FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guabernare.ServiceDefaults", "src\Guabernare.ServiceDefaults\Guabernare.ServiceDefaults.csproj", "{1243357A-B179-482E-A0CB-DAA2D44B11DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{F6117078-8E99-46B3-A244-7F22C87E1725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6117078-8E99-46B3-A244-7F22C87E1725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6117078-8E99-46B3-A244-7F22C87E1725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4661193E-3E50-4C54-8311-18D9EDDE96FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4661193E-3E50-4C54-8311-18D9EDDE96FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4661193E-3E50-4C54-8311-18D9EDDE96FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4661193E-3E50-4C54-8311-18D9EDDE96FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1243357A-B179-482E-A0CB-DAA2D44B11DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1243357A-B179-482E-A0CB-DAA2D44B11DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1243357A-B179-482E-A0CB-DAA2D44B11DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1243357A-B179-482E-A0CB-DAA2D44B11DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

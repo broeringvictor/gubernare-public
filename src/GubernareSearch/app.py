@@ -1,80 +1,55 @@
 ﻿from flask import Flask, request, jsonify
 from flask_caching import Cache
-from datetime import datetime
-import re
+from flask_cors import CORS
+import hashlib
+
+# Remova a importação incorreta de await_promise
 from src.Api.Service.EprocSearch import eproc_search
 
 app = Flask(__name__)
+CORS(app)
 
-# Or using a built-in type
 app.config['CACHE_TYPE'] = 'simple'
 app.config['CACHE_DEFAULT_TIMEOUT'] = 80000
 cache = Cache(app)
-# cache.clear()
-def get_cached_processes():
-    
-    processes = cache.get('all_processes')
+
+def get_cached_processes(login, password):
+    key = hashlib.sha256(f"{login}:{password}".encode()).hexdigest()
+    processes = cache.get(key)
 
     if not processes:
-       
-        processes = eproc_search()
-        cache.set('all_processes', processes)
+        processes = eproc_search(login, password)
+        if processes:
+            cache.set(key, processes)
 
     return processes
-@app.route("/allprocesses", methods=['GET'])
-def all_processes():
-    processes = get_cached_processes()
-    return jsonify(processes), 200
 
-@app.route("/processes/dates", methods=['GET'])
-@cache.memoize(timeout=60)  # Cache baseado nos parâmetros
-def processes_with_deadline():
-    date_param = request.args.get('date')
-    if not date_param:
-        return jsonify({'error': 'Parâmetro "date" é obrigatório'}), 400
+@app.route("/alllegalproceeding", methods=['POST'])
+def all_legal_proceeding():
+    data = request.get_json()
+
+    if not data:
+        return jsonify({'error': 'Request body deve ser JSON'}), 400
+
+    login = data.get('login')
+    password = data.get('password')
+
+    if not login or not password:
+        return jsonify({'error': 'Parâmetros login e password são obrigatórios'}), 400
 
     try:
-        input_date = datetime.strptime(date_param, '%d%m%Y').date()
-    except ValueError:
-        return jsonify({'error': 'Formato de data inválido. Use DDMMYYYY'}), 400
+        # Use a função de cache
+        processes = get_cached_processes(login, password)
 
-    processes = get_cached_processes()
-    filtered_processes = []
+        if processes is None:
+            return jsonify({'error': 'Falha ao obter processos'}), 500
 
-    for process in processes:
-        eventos = process.get('eventos', [])
-        eventos_prazo = []
+        # Retorne os processos diretamente com jsonify
+        return jsonify(processes)
 
-        for evento in eventos:
-            if len(evento) < 3:
-                continue
-
-            descricao = evento[2]
-            data_final = None
-
-            for linha in descricao.split('\n'):
-                match = re.search(r'Data final:\s*(\d{2}/\d{2}/\d{4})', linha)
-                if match:
-                    try:
-                        data_final = datetime.strptime(match.group(1), '%d/%m/%Y').date()
-                        break
-                    except ValueError:
-                        continue
-
-            if data_final and data_final > input_date:
-                eventos_prazo.append({
-                    'id_evento': evento[0],
-                    'data_final': match.group(1),
-                    'descricao': descricao
-                })
-
-        if eventos_prazo:
-            filtered_processes.append({
-                'numero_processo': process.get('numero_processo'),
-                'eventos_prazo': eventos_prazo
-            })
-
-    return jsonify(filtered_processes), 200
+    except Exception as e:
+        app.logger.error(f'Erro no endpoint /alllegalproceeding: {str(e)}')
+        return jsonify({'error': 'Erro interno no servidor'}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)

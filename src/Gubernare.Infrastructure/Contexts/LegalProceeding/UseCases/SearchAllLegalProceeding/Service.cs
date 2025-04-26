@@ -2,21 +2,22 @@
 using System.Text.Json;
 using Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProceeding.Contracts;
 
-namespace Gubernare.Infrastructure.Contexts.LegalProeeding.UseCases.SearchAllLegalProceeding
+namespace Gubernare.Infrastructure.Contexts.LegalProceeding.UseCases.SearchAllLegalProceeding
 {
     public class Service : IService
     {
         public async Task<string> SendSearchAllLegalProceedingAsync(string login, string password,
             CancellationToken cancellationToken)
         {
-            var url = "http://localhost:5000/api/CourtLogin";
+            var url = "http://localhost:5000/alllegalproceeding";
             using var httpClient = new HttpClient();
 
             try
             {
-                var payload = new
+                var payload = new LoginRequest // Usando a classe corrigida
                 {
-                    Login = login, Password = password
+                    Login = login,
+                    Password = password
                 };
 
                 var json = JsonSerializer.Serialize(payload);
@@ -26,8 +27,7 @@ namespace Gubernare.Infrastructure.Contexts.LegalProeeding.UseCases.SearchAllLeg
 
                 if (response.IsSuccessStatusCode)
                 {
-                    var result = await response.Content.ReadAsStringAsync(cancellationToken);
-                    return result;
+                    return await response.Content.ReadAsStringAsync(cancellationToken);
                 }
                 else
                 {

@@ -9,8 +9,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
 {
     public class LegalProceeding : Entity
     {
-        //TODO: ADICIONAR VALOR DA CAULA E ULTIMA MOVIMENTACAO, VARA
-        // Construtor vazio protegido (para uso de ORMs, se necessário).
+
         protected LegalProceeding()
         {
 
@@ -21,31 +20,37 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
         
         [JsonPropertyName("Number")]
         public string Number { get; private set; }
-        public string Name { get; private set; }
-        public string ClientRole { get; private set; }
+        public string? Name { get; private set; }
+        public string? ClientRole { get; private set; }
         public string? OpposingPartyRole { get; private set; }
         public CourtInstances? CourtInstance { get; private set; }
-
-        public string Description { get; private set; }
         
-        [JsonPropertyName("LegalCourt")]
+              
+        [JsonPropertyName("CourtDivisionName")]
+        public string? CourtDivisionName { get; private set; }
         public string LegalCourt { get; private set; }
+        
+        [JsonPropertyName("CauseValue")]
+        public double? CauseValue { get; private set; }
+
+        public string? Description { get; private set; }
+  
         public string AccessCode { get; private set; }
-        public DateTime Date { get; private set; }
+        public DateTime? DistributionDate { get; private set; }
         
         [JsonPropertyName("Type")]
         public string Type { get; private set; }
         public string Status { get; private set; }
         public DateTime? FinishedDateTime { get; private set; }
 
-        // Listas internas com encapsulamento
+        
         private readonly List<IndividualClient> _individualClients;
         public IReadOnlyCollection<IndividualClient> IndividualClients => _individualClients.AsReadOnly();
 
         private readonly List<Contract> _contracts;
-        public IReadOnlyCollection<Contract> Contracts => _contracts.AsReadOnly();
+        public List<ToDo?> Tasks { get; set; } = new();
+   
 
-        // AJUSTE AQUI: agora usamos LegalProceedingEvent (singular)
         private readonly List<LegalProceedingEvent> _legalProceedingEvents;
         public IReadOnlyCollection<LegalProceedingEvent> LegalProceedingEvents => _legalProceedingEvents.AsReadOnly();
 
@@ -57,46 +62,39 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
             string number,
             string name,
             string clientRole,
-            string description,
+            string? courtDivisionName,
+            string? description,
             string legalCourt,
             string accessCode,
-            DateTime date,
+            DateTime? distributionDate,
             string type,
             string status,
             DateTime? finishedDateTime,
             CourtInstances? courtInstance = null,
             string? opposingPartyRole = null,
             List<IndividualClient>? individualClients = null,
-            List<Contract>? contracts = null,
-            // AJUSTE AQUI: parâmetro é List<LegalProceedingEvent>
             List<LegalProceedingEvent>? legalProceedingEvents = null,
             List<OpposingParty>? opposingParties = null
         )
         {
-            // Validações simples
-            if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException("Name cannot be empty.", nameof(name));
-
-            if (string.IsNullOrWhiteSpace(clientRole))
-                throw new ArgumentException("ClientRole cannot be empty.", nameof(clientRole));
 
             Number = number;
-            Name = name ?? string.Empty;
+            Name = name ?? "Não informado";
             ClientRole = clientRole;
             Description = description ?? string.Empty;
+            CourtDivisionName = courtDivisionName ?? string.Empty;
             LegalCourt = legalCourt ?? string.Empty;
             AccessCode = accessCode ?? string.Empty;
-            Date = date;
+            DistributionDate = distributionDate;
             Type = type ?? string.Empty;
             Status = status ?? string.Empty;
             FinishedDateTime = finishedDateTime;
             CourtInstance = courtInstance;
             OpposingPartyRole = opposingPartyRole;
 
-            // Inicializamos listas, evitando null
+
             _individualClients = individualClients ?? new List<IndividualClient>();
-            _contracts = contracts ?? new List<Contract>();
-            // AJUSTE AQUI: atribuindo a List<LegalProceedingEvent>
+
             _legalProceedingEvents = legalProceedingEvents ?? new List<LegalProceedingEvent>();
             _opposingParties = opposingParties ?? new List<OpposingParty>();
         }

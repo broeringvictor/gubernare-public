@@ -125,9 +125,6 @@ namespace Gubernare.Api.Migrations
                         .HasColumnType("DATETIME")
                         .HasColumnName("EndDate");
 
-                    b.Property<Guid?>("LegalProceedingId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(300)
@@ -153,8 +150,6 @@ namespace Gubernare.Api.Migrations
                         .HasColumnName("Type");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("LegalProceedingId");
 
                     b.ToTable("Contract", (string)null);
                 });
@@ -351,24 +346,36 @@ namespace Gubernare.Api.Migrations
                         .HasColumnType("NVARCHAR")
                         .HasColumnName("AccessCode");
 
+                    b.Property<string>("CauseValue")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("CauseValue")
+                        .HasAnnotation("Relational:JsonPropertyName", "CauseValue");
+
                     b.Property<string>("ClientRole")
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("NVARCHAR")
                         .HasColumnName("ClientRole");
 
+                    b.Property<string>("CourtDivisionName")
+                        .HasMaxLength(100)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("CourtDivisionName")
+                        .HasAnnotation("Relational:JsonPropertyName", "CourtDivisionName");
+
                     b.Property<int?>("CourtInstance")
                         .HasColumnType("int")
                         .HasColumnName("CourtInstance");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("Date");
 
                     b.Property<string>("Description")
                         .HasMaxLength(2000)
                         .HasColumnType("NVARCHAR")
                         .HasColumnName("Description");
+
+                    b.Property<DateTime>("DistributionDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Date");
 
                     b.Property<DateTime?>("FinishedDateTime")
                         .HasColumnType("datetime2")
@@ -389,7 +396,8 @@ namespace Gubernare.Api.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("NVARCHAR")
-                        .HasColumnName("Number");
+                        .HasColumnName("Number")
+                        .HasAnnotation("Relational:JsonPropertyName", "Number");
 
                     b.Property<string>("OpposingPartyRole")
                         .HasMaxLength(120)
@@ -404,7 +412,8 @@ namespace Gubernare.Api.Migrations
                     b.Property<string>("Type")
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR")
-                        .HasColumnName("Type");
+                        .HasColumnName("Type")
+                        .HasAnnotation("Relational:JsonPropertyName", "Type");
 
                     b.HasKey("Id");
 
@@ -452,6 +461,49 @@ namespace Gubernare.Api.Migrations
                     b.HasIndex("LegalProceedingId");
 
                     b.ToTable("LegalProceedingEvent", (string)null);
+                });
+
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.ToDo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DueDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsCompleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<Guid?>("ProcessId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsCompleted");
+
+                    b.HasIndex("ProcessId");
+
+                    b.HasIndex("UserId", "ProcessId", "IsCompleted");
+
+                    b.ToTable("ToDo", (string)null);
                 });
 
             modelBuilder.Entity("LegalProceedingOpposingParty", b =>
@@ -625,13 +677,6 @@ namespace Gubernare.Api.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.Contract", b =>
-                {
-                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", null)
-                        .WithMany("Contracts")
-                        .HasForeignKey("LegalProceedingId");
-                });
-
             modelBuilder.Entity("Gubernare.Domain.Contexts.ClientContext.Entities.IndividualClient", b =>
                 {
                     b.OwnsOne("Gubernare.Domain.Contexts.SharedContext.ValueObjects.Documents.Cpf", "CpfNumber", b1 =>
@@ -733,6 +778,24 @@ namespace Gubernare.Api.Migrations
                     b.Navigation("LegalProceeding");
                 });
 
+            modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.ToDo", b =>
+                {
+                    b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", "Process")
+                        .WithMany("Tasks")
+                        .HasForeignKey("ProcessId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Gubernare.Domain.Contexts.AccountContext.Entities.User", "User")
+                        .WithMany("Tasks")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Process");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("LegalProceedingOpposingParty", b =>
                 {
                     b.HasOne("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", null)
@@ -781,13 +844,15 @@ namespace Gubernare.Api.Migrations
             modelBuilder.Entity("Gubernare.Domain.Contexts.AccountContext.Entities.User", b =>
                 {
                     b.Navigation("CourtLogins");
+
+                    b.Navigation("Tasks");
                 });
 
             modelBuilder.Entity("Gubernare.Domain.Contexts.LegalProceeding.Entities.LegalProceeding", b =>
                 {
-                    b.Navigation("Contracts");
-
                     b.Navigation("LegalProceedingEvents");
+
+                    b.Navigation("Tasks");
                 });
 #pragma warning restore 612, 618
         }

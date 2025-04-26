@@ -30,16 +30,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
             DateTime? legalDeadline = null
         )
         {
-            if (string.IsNullOrWhiteSpace(description))
-                throw new ArgumentException("Description cannot be empty.", nameof(description));
-
-            if (string.IsNullOrWhiteSpace(type))
-                throw new ArgumentException("Type cannot be empty.", nameof(type));
-
-            if (string.IsNullOrWhiteSpace(status))
-                throw new ArgumentException("Status cannot be empty.", nameof(status));
-
-            LegalProceedingId = legalProceedingId;  // Define a FK
+            LegalProceedingId = legalProceedingId;  
 
             Description = description;
             Date = date;
@@ -50,9 +41,7 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
 
         #region Métodos de comportamento (exemplo)
 
-        /// <summary>
-        /// Exemplo de método de domínio para atualizar o status do evento.
-        /// </summary>
+
         public void UpdateStatus(string newStatus)
         {
             if (string.IsNullOrWhiteSpace(newStatus))
@@ -61,9 +50,6 @@ namespace Gubernare.Domain.Contexts.LegalProceeding.Entities
             Status = newStatus;
         }
 
-        /// <summary>
-        /// Exemplo de método para redefinir o prazo legal do evento.
-        /// </summary>
         public void SetLegalDeadline(DateTime? newDeadline)
         {
             // Validações específicas podem ser aplicadas.

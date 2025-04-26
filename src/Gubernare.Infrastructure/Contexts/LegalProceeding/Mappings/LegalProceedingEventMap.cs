@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Gubernare.Infrastructure.Contexts.LegalProeeding.Mappings
+namespace Gubernare.Infrastructure.Contexts.LegalProceeding.Mappings
 {
     public class LegalProceedingEventMap : IEntityTypeConfiguration<LegalProceedingEvent>
     {

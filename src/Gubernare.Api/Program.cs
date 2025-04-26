@@ -1,4 +1,4 @@
-
+using Guabernare.ServiceDefaults;
 using Gubernare.Api.Extensions;
 
 using Microsoft.OpenApi.Models;
@@ -6,8 +6,10 @@ using Scalar.AspNetCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddOpenApi();
-builder.AddDefaultOpenApi(); 
+
+builder.AddDefaultOpenApi();
+builder.AddServiceDefaults();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SchemaFilter<DescriptionSchemaFilter>();
@@ -20,9 +22,9 @@ builder.Services.AddCors(options => //TODO: TIRAR MAIS TARDE!!!
     options.AddPolicy("AllowAll", policy =>
     {
         policy
-            .AllowAnyOrigin()    // 👈 Permite qualquer origem
-            .AllowAnyMethod()    // 👈 Permite qualquer verbo (GET, POST, etc.)
-            .AllowAnyHeader();   // 👈 Permite qualquer cabeçalho
+            .AllowAnyOrigin()    
+            .AllowAnyMethod()  
+            .AllowAnyHeader();  
     });
 });
 builder.AddAccountContext();
@@ -37,7 +39,7 @@ builder.AddMediator();
 
 var app = builder.Build();
 
-// Middleware pipeline configuration
+
 
 
 app.UseHttpsRedirection();
@@ -54,7 +56,7 @@ app.MapOpenApi();
 
 app.MapScalarApiReference(options =>
 {
-    // Disable default fonts to avoid download unnecessary fonts
+    
     options.DefaultFonts = false;
 });
 app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();

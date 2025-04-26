@@ -3,14 +3,14 @@ using Gubernare.Domain.Contexts.LegalProceeding.UseCases.SearchAllLegalProceedin
 using Gubernare.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Gubernare.Infrastructure.Contexts.LegalProeeding.UseCases.SearchAllLegalProceeding;
+namespace Gubernare.Infrastructure.Contexts.LegalProceeding.UseCases.SearchAllLegalProceeding;
 
 public class Repository(AppDbContext context) : IRepository
 {
     public async Task<CourtLogin?> GetByIdAsync(Guid Id, CancellationToken cancellationToken)
     {
         var response = await context.CourtLogins
-            .FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
+            .FirstOrDefaultAsync(x => x.UserId == Id, cancellationToken);
 
         return response;
     }

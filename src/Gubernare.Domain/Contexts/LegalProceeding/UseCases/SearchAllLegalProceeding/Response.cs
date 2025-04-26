@@ -19,14 +19,13 @@ public class Response : SharedContext.UseCases.Response
     }
     
     // Construtor que recebe lista de ResponseData
-    public Response(string message, IEnumerable<ResponseData> data)
+    public Response(string message, ResponseData data)
     {
         Message = message;
-        Status = 201;
-        Notifications = null;
-        Data = data; // Data agora é uma lista
+        Status = 200; // 200 é mais adequado para respostas de sucesso
+        Data = data;
     }
 
     // Agora a propriedade é uma lista
-    public IEnumerable<ResponseData>? Data { get; set; }
+    public ResponseData? Data { get; set; }
 }
