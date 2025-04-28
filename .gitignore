@@ -483,3 +483,10 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Python
+*.py
+*.ipynb
+.env
+
+

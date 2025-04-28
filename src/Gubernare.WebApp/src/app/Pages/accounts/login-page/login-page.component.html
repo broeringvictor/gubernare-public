@@ -2,11 +2,11 @@
   <div class="uk-flex-center" uk-grid>
     <div class="uk-width-1-1 uk-width-1-2@m">
       <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded"
-           style="border: 1px solid #e5e5e5; background: #f8f8f8;"> <!-- substituí as variáveis do UIKit por valores diretos -->
+           style="border: 1px solid @global-border; background: @global-muted-background;">
 
         <!-- Cabeçalho -->
         <div class="uk-margin-medium-bottom uk-text-center">
-          <h3 class="uk-heading-medium uk-margin-remove" style="color: #1e87f0;">Conectar-se</h3>
+          <h3 class="uk-heading-medium uk-margin-remove" style="color: @global-primary-background;">Conectar-se</h3>
           <p class="uk-text-muted uk-margin-remove-top">Acesse sua conta</p>
         </div>
 
@@ -17,7 +17,7 @@
                    type="email"
                    formControlName="email"
                    placeholder="E-mail"
-                   style="background: #fff; border-color: #ccc;">
+                   style="background: @global-background; border-color: @global-border;">
           </div>
 
           <div class="uk-margin">
@@ -25,14 +25,14 @@
                    type="password"
                    formControlName="password"
                    placeholder="Senha"
-                   style="background: #fff; border-color: #ccc;">
+                   style="background: @global-background; border-color: @global-border;">
           </div>
 
           <div class="uk-margin">
             <button type="submit"
                     [disabled]="form.invalid || busy"
                     class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded"
-                    style="background: #1e87f0; color: #fff;">
+                    style="background: @global-primary-background; color: @global-primary-color;">
               Entrar
             </button>
           </div>
@@ -47,22 +47,24 @@
         <div class="uk-margin-medium-top uk-text-center">
           <a routerLink="/recuperar-senha"
              class="uk-button uk-button-link uk-text-small"
-             style="color: #1e87f0;">
+             style="color: @global-link-color;">
             Esqueci minha senha
           </a>
 
           <div class="uk-margin-small-top">
             <a routerLink="/cadastrar"
                class="uk-button uk-button-default uk-border-rounded uk-width-1-1"
-               style="border-color: #1e87f0; color: #1e87f0;">
+               style="border-color: @global-primary-background; color: @global-primary-background;">
               Criar nova conta
             </a>
           </div>
+
           <div *ngIf="errorMessage" class="error-message">
             {{ errorMessage }}
           </div>
         </div>
-        <div *ngIf="Security.getUser()">
+
+        <div *ngIf="Security.getUser()" class="uk-margin-top">
           <p>Usuário logado: {{ Security.getUser()?.name }}</p>
           <p>ID: {{ Security.getUser()?.id }}</p>
         </div>
